@@ -1,0 +1,873 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aconcagua Deportes - Equipamiento Profesional para Aventura y Naturaleza</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Aconcagua Deportes — equipamiento profesional para caza, pesca, kayaks y camping en San Felipe, Chile. Distribuidores oficiales Gamo, Shimano, DUKHA. Edificio Prat #740, local 22.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aconcagua Deportes - Equipamiento Profesional para Aventura y Naturaleza">
+    <meta property="og:description" content="Aconcagua Deportes — equipamiento profesional para caza, pesca, kayaks y camping en San Felipe, Chile. Distribuidores oficiales Gamo, Shimano, DUKHA. Edificio Prat #740, local 22.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aconcagua Deportes - Equipamiento Profesional para Aventura y Naturaleza">
+    <meta name="twitter:description" content="Aconcagua Deportes — equipamiento profesional para caza, pesca, kayaks y camping en San Felipe, Chile. Distribuidores oficiales Gamo, Shimano, DUKHA. Edificio Prat #740, local 22.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aconcaguadeportes.cl/">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Aconcagua Deportes",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Felipe",
+            "addressCountry": "Chile"
+        },
+        "telephone": "+56941446141",
+        "openingHours": [
+            "Mo-Fr 09:00-19:00",
+            "Sa 10:00-14:00"
+        ],
+        "category": "Sporting Goods Store"
+    }
+    </script>
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    
+    <link rel="stylesheet" href="css/styleprueba.css">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" href="sobrenosotros.jpg" as="image">
+</head>
+<body>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20consultar%20sobre%20productos%20de%20Aconcagua%20Deportes" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Announcement Bar -->
+    <div id="announcementBar" class="announcement-bar">
+        <div class="container">
+            <span>🚚 Envíos a todo Chile — Consulta por WhatsApp</span>
+        </div>
+    </div>
+
+    <!-- Utility Bar (estilo Armarket) -->
+    <div class="utility-bar">
+        <div class="container utility-bar-content">
+            <ul class="utility-locations">
+                <li><a href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" target="_blank"><i class="fas fa-map-marker-alt"></i> Edificio Prat #740, local 22 · San Felipe</a></li>
+                <li><a href="tel:+56941446141"><i class="fas fa-phone"></i> +56 9 4144 6141</a></li>
+            </ul>
+            <form class="utility-search" id="utilitySearchForm" role="search">
+                <input type="text" id="utilitySearchInput" placeholder="Buscar productos: rifle, caña, kayak, carpa..." aria-label="Buscar">
+                <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container main-header-content">
+            <a href="index.html" class="logo-container">
+                <div class="logo-text">
+                    <div class="logo-main">ACONCAGUA DEPORTES</div>
+                    <div class="logo-sub">AVENTURA & NATURALEZA</div>
+                </div>
+            </a>
+        
+            <div class="container category-bar-content">
+                <button class="cat-toggle" id="catToggle"><i class="fas fa-bars"></i> Categorías</button>
+                <ul class="category-menu" id="categoryMenu">
+                <li class="cat-item">
+                    <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
+                    <div class="cat-dropdown">
+                        <a href="rifles.html">Rifles de aire</a>
+                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="opticas.html">Miras y ópticas</a>
+                        <a href="balines.html">Municiones / balines</a>
+                        <a href="accesorios-caza.html">Cuchillería y accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="pesca2.html"><i class="fas fa-fish"></i> Pesca</a>
+                    <div class="cat-dropdown">
+                        <a href="canas.html">Cañas</a>
+                        <a href="carretes.html">Reels / carretes</a>
+                        <a href="senuelos.html">Señuelos</a>
+                        <a href="cuerdas.html">Líneas y cuerdas</a>
+                        <a href="lentes.html">Lentes</a>
+                        <a href="herramientasycuchillos.html">Herramientas y cuchillos</a>
+                        <a href="buceo.html">Buceo</a>
+                        <a href="pequeños-accesorios.html">Pequeños accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="kayak2.html"><i class="fas fa-ship"></i> Kayaks</a>
+                    <div class="cat-dropdown">
+                        <a href="kayak2.html">Kayaks DUKHA</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="camping.html"><i class="fas fa-campground"></i> Camping</a>
+                    <div class="cat-dropdown">
+                        <a href="camping.html">Mochilas y outdoor</a>
+                    </div>
+                </li>
+                <li class="cat-item"><a href="#about"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li class="cat-item"><a href="#map"><i class="fas fa-map-marked-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="#ofertas" class="cat-offers-link"><i class="fas fa-tag"></i> Ofertas</a>
+            </div>
+   
+    
+            <div class="header-actions">
+                <button class="search-btn" title="Buscar"></button>
+                <button class="theme-toggle" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="img/aaa3.png" alt="Aventura en la naturaleza" class="hero-bg-image" fetchpriority="high">
+        </div>
+        
+        <div class="container hero-content">
+            <p class="hero-description">Equipamiento profesional para caza, pesca, kayaks y camping desde el corazón de San Felipe. Vive expediciones seguras, cómodas y con el respaldo de distribuidores oficiales.</p>
+            <div class="hero-buttons">
+                <a href="#categories" class="btn btn-primary">
+                    <i class="fas fa-compass"></i> Explorar
+                </a>
+                <a href="https://wa.me/56941446141" class="btn btn-accent" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar
+                </a>
+            </div>
+            <div class="hero-badges">
+                <div class="hero-badge"><i class="fas fa-award"></i> Distribuidores oficiales</div>
+                <div class="hero-badge"><i class="fas fa-shipping-fast"></i> Envíos a todo Chile</div>
+                <div class="hero-badge"><i class="fas fa-hiking"></i> Equipo para aventuras reales</div>
+                <div class="hero-badge"><i class="fas fa-map-marked-alt"></i> Asesoría local experta</div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <!-- Ofertas / Más vendidos (grilla estilo Armarket) -->
+    <section id="ofertas" class="offers-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">TIENDA</div>
+                <h2 class="section-title">PRODUCTOS MÁS <span class="text-gradient">DESTACADOS</span></h2>
+                <p class="section-description">Selección destacada con los mejores precios. Consulta stock por WhatsApp.</p>
+            </div>
+            <div class="offers-grid">
+                <!-- Caza: Rifle -->
+                <article class="shop-card">
+                    <div class="shop-card-badge new">NUEVO</div>
+                    <a href="rifles.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH-mrZ9FwYJ62RnL1ZUCdJIcZgOoKj_ODg8ZwP9_bTs62851DpBxOMRM&s=10" alt="Norica Omnia ZRS" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Caza · Rifles</span>
+                        <h3 class="shop-card-name"><a href="rifles.html">Norica Omnia ZRS</a></h3>
+                        <p class="shop-card-desc">Sin retroceso (ZRS), cal. 5.5 mm, 275 m/s. Carril 11 mm, ambidiestra.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20el%20Rifle%20Norica%20Omnia%20ZRS.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Caza: Pistola -->
+                <article class="shop-card">
+                    <div class="shop-card-badge popular">POPULAR</div>
+                    <a href="pistolas.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnfYv4XS3F3frAsO7CkwLRFEx_6kEwQsoT-PgEeEPX3nkYyI-x38NzFPpiF53f" alt="Umarex Beretta M92 Full Metal" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Caza · Pistolas</span>
+                        <h3 class="shop-card-name"><a href="pistolas.html">Umarex Beretta M92 Full Metal</a></h3>
+                        <p class="shop-card-desc">CO2 cal. 4.5 mm, Blowback, cuerpo full metal, 17 balines.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20Umarex%20Beretta%20M92%20Full%20Metal.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Caza: Óptica -->
+                <article class="shop-card">
+                    <div class="shop-card-badge new">NUEVO</div>
+                    <a href="opticas.html" class="shop-card-img">
+                        <img src="https://images.salsify.com/images/q_auto/c2105b371a046cc9c31c5c3ab4f329d58a00d152/f7d4950b81543516fee4785557739d13861605a6.jpg" alt="Sightmark Presidio 3-18x50" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Caza · Ópticas</span>
+                        <h3 class="shop-card-name"><a href="opticas.html">Sightmark Presidio 3-18x50</a></h3>
+                        <p class="shop-card-desc">Mira telescópica 3-18x50, retícula LR2 en primer plano focal. Tiro de precisión.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20Mira%20Sightmark%20Presidio%203-18x50.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Pesca: Caña premium -->
+                <article class="shop-card">
+                    <div class="shop-card-badge new">NUEVO</div>
+                    <a href="canas.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHwqUvSDWwSyib-gbb-CpXeJM_kwAJKHyGOFv4AaG7_nE6v949lrdShrRmmN_0" alt="Okuma Helios SX 902M" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Pesca · Cañas</span>
+                        <h3 class="shop-card-name"><a href="canas.html">Okuma Helios SX 902M</a></h3>
+                        <p class="shop-card-desc">Spinning premium carbono Toray 30T, 274 cm, casting 15-45 g, acción rápida.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20Ca%C3%B1a%20Okuma%20Helios%20SX%20902M.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Pesca: Caña versátil -->
+                <article class="shop-card">
+                    <div class="shop-card-badge popular">POPULAR</div>
+                    <a href="canas.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn3G3_8HHGxnv-Pi3KWPUQkvnBZLsqeLM6nzGLYqhHtnpWLFSkGAJvVZc&s=10" alt="Okuma Cascade 70" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Pesca · Cañas</span>
+                        <h3 class="shop-card-name"><a href="canas.html">Okuma Cascade 70</a></h3>
+                        <p class="shop-card-desc">Versátil, 210 cm, lure 5-20 g, cuadros Fuji. Ideal para laguna o muelle.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20Ca%C3%B1a%20Okuma%20Cascade%2070.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Carrete -->
+                <article class="shop-card">
+                    <div class="shop-card-badge popular">POPULAR</div>
+                    <a href="carretes.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvuJpTMGGOr_g1lLZ06M9G50M9YGFLS3Xs-ow&s" alt="Shimano Stradic FL 4000 FI" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Pesca · Carretes</span>
+                        <h3 class="shop-card-name"><a href="carretes.html">Shimano Stradic FL 4000 FI</a></h3>
+                        <p class="shop-card-desc">Reel spinning de alta gama, 4000 FI, aluminio, micromodular. Suave y potente.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20el%20Shimano%20Stradic%20FL%204000%20FI.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Señuelo -->
+                <article class="shop-card">
+                    <div class="shop-card-badge popular">POPULAR</div>
+                    <a href="senuelos.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8oUoSOVAXf0yiA6Eg3c__nLq4-R4gWH5JA_yvFJFHqjN0K4R2mA9HfJXmlkQ" alt="Rapala Original Floater F11" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Pesca · Señuelos</span>
+                        <h3 class="shop-card-name"><a href="senuelos.html">Rapala Original Floater F11</a></h3>
+                        <p class="shop-card-desc">El señuelo de superficie más vendido del mundo. 11 cm, flota y bucea. Rapala.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20el%20Rapala%20Original%20Floater%20F11.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+
+                <!-- Camping: mochila -->
+                <article class="shop-card">
+                    <div class="shop-card-badge new">NUEVO</div>
+                    <a href="camping.html" class="shop-card-img">
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0nWYmW0SFr5nSHJDKL1zOmeMZiCJGVAhVgI6RL2wEA88KT_YGbxSanEYm2Fyq" alt="Rapala Urban Back Bag 25L" loading="lazy">
+                    </a>
+                    <div class="shop-card-body">
+                        <span class="shop-card-cat">Camping · Mochilas</span>
+                        <h3 class="shop-card-name"><a href="camping.html">Rapala Urban Back Bag 25L</a></h3>
+                        <p class="shop-card-desc">Mochila 25 L, respaldo 3D ventilado, bolsillo notebook 14" o vejiga 2L.</p>
+                        <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20Rapala%20Urban%20Back%20Bag%2025L.%20%C2%BFEst%C3%A1%20disponible%3F" target="_blank" class="add-cart-btn"><i class="fab fa-whatsapp"></i> Consultar</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MARCAS <span class="text-gradient">OFICIALES</span></h2>
+                <p class="section-description">Trabajamos exclusivamente con las marcas líderes en equipamiento deportivo</p>
+            </div>
+            
+            <div class="brands-carousel swiper brands-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://images.seeklogo.com/logo-png/5/1/gamo-logo-png_seeklogo-59129.png" alt="Logo Gamo">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw-xBXB8QpOwfSEdSaZAyR8OfkzwFnx3vyWw&s" alt="Logo Shimano">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://images.seeklogo.com/logo-png/36/1/daiwa-logo-png_seeklogo-368397.png" alt="Logo Daiwa">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Y_gsYDXDXPPCBBbNVq0fu9cV1KDiK9gNog&s" alt="Logo DUKHA">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://fourleaf.ie/wp-content/uploads/2023/02/umarex-logo.png" alt="Logo Umarex">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbumbp0eQ5s74zRm_t6_lnx3JZtPb_T8X7hA&s" alt="Logo Rapala">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-card">
+                            <img class="brand-logo" src="https://ih1.redbubble.net/image.5932742310.3569/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Logo Abu Garcia">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev brands-button-prev"></div>
+                <div class="swiper-button-next brands-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Experience Section -->
+    <section class="experience-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">AVENTURA</div>
+                <h2 class="section-title">Tu expedición comienza con el mejor equipo</h2>
+                <p class="section-description">Seleccionamos materiales resistentes y marcas líderes para que cada salida al campo sea segura, cómoda y memorable.</p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Conexión con la naturaleza</h3>
+                    <p>Diseños pensados para tus aventuras al aire libre: caza, pesca, kayak y camping con una presencia natural y sólida.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Calidad profesional</h3>
+                    <p>Distribuidores oficiales y asesoría especializada para ofrecer solo productos confiables y duraderos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-route"></i></div>
+                    <h3>Listos para tu viaje</h3>
+                    <p>Todo el equipamiento que necesitas en un solo lugar, con soporte local desde San Felipe y envíos a todo Chile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/exterior.jpeg" alt="Sobre Aconcagua Deportes" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h2>NUESTRA <span class="text-gradient">HISTORIA</span></h2>
+                    <p>Desde nuestros inicios en 2008, Aconcagua Deportes ha estado comprometido con proporcionar el mejor equipamiento para los amantes de la naturaleza y los deportes al aire libre. Nacimos de la pasión por la aventura y el respeto por el entorno natural.</p>
+                    <p>Somos distribuidores oficiales de las marcas más prestigiosas del sector, seleccionando cuidadosamente cada producto por su calidad, durabilidad y rendimiento. Creemos que cada aventurero merece equipos que potencien su experiencia en la naturaleza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Section -->
+    <section id="map" class="map-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">VISÍTANOS</div>
+                <h2 class="section-title">NUESTRA <span class="text-gradient">UBICACIÓN</span></h2>
+                <p class="section-description">La mejor calidad garantizda en el valle de Aconcagua</p>
+            </div>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.183179429044!2d-70.7285349!3d-32.75006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968817000258d891%3A0xc4abee033b2378c9!2sEdificio%20Prat!5e0!3m2!1ses!2scl!4v1717000000000!5m2!1ses!2scl" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-overlay">
+                    <div class="map-info">
+                        <h3>Aconcagua Deportes</h3>
+                        <p>Especialistas en equipamiento profesional para caza, pesca y aventuras al aire libre. Te esperamos para asesorarte personalmente.</p>
+                        <ul class="map-contact-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Edificio Prat #740, local 22, San Felipe.</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+56 9 4144 6141</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Lun-Vie: 9:00 - 19:00 | Sáb: 10:00 - 14:00</span>
+                            </li>
+                        </ul>
+                        <a 
+    href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" 
+    class="btn btn-primary map-directions-btn" 
+    target="_blank">
+    <i class="fas fa-directions"></i> Cómo llegar
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">PREGUNTAS FRECUENTES</div>
+                <h2 class="section-title">¿TIENES <span class="text-gradient">DUDAS?</span></h2>
+                <p class="section-description">Resolvemos tus consultas más comunes sobre nuestros productos y servicios</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Hacen envíos a todo Chile? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, realizamos envíos a todo el territorio chileno. Utilizamos servicios de courier confiables como Starken, Chilexpress y Correos de Chile. Los tiempos de entrega varían según la ubicación: Región Metropolitana 1-2 días, otras regiones 3-5 días hábiles.</p>
+                    </div>
+                </div>
+                
+
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Son distribuidores oficiales? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, somos distribuidores oficiales de las marcas Gamo, Shimano, Daiwa, DUKHA, Umarex, Rapala y Abu Garcia. Esto nos permite ofrecer productos originales con precios competitivos y asesoramiento experto.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cómo puedo consultar disponibilidad? <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Puedes consultar stock y disponibilidad contactándonos por WhatsApp al +56 9 4144 6141, llamando a nuestra tienda o visitándonos personalmente en Edificio Prat #740, local 22, San Felipe. Nuestro equipo te asesorará en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container section-padding">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-main">ACONCAGUA DEPORTES</div>
+                        <div class="logo-sub">AVENTURA & NATURALEZA</div>
+                    </div>
+                    <p class="footer-description">Especialistas en equipamiento premium para caza, pesca y deportes al aire libre. Comprometidos con la calidad, la experiencia y la pasión por la aventura.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">CATÁLOGOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="caza.html"><i class="fas fa-chevron-right"></i> Caza y Tiro Deportivo</a></li>
+                        <li><a href="pesca.html"><i class="fas fa-chevron-right"></i> Pesca Deportiva</a></li>
+                        <li><a href="kayak.html"><i class="fas fa-chevron-right"></i> Kayaks DUKHA</a></li>
+                        <li><a href="camping.html"><i class="fas fa-chevron-right"></i> Camping</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Ofertas Especiales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">ENLACES RÁPIDOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                        <li><a href="#map"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de Garantía</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACTO</h3>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>🏢Edificio Prat #740, local 22, San Felipe.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 4144 6141</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>contacto@aconcaguadeportes.cl</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Vie: 9:00 - 19:00<br>Sáb: 10:00 - 14:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aconcagua Deportes. Todos los derechos reservados. | Desarrollado con pasión por la aventura y la naturaleza</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    
+    <script>
+        // ============================================
+        // TEMA OSCURO / CLARO
+        // ============================================
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+
+        // Verificar preferencia guardada
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+            updateThemeIcon();
+        } else if (savedTheme === 'light') {
+            htmlElement.classList.remove('dark-mode');
+            updateThemeIcon();
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            htmlElement.classList.add('dark-mode');
+            updateThemeIcon();
+        }
+
+        // Toggle al hacer clic
+        themeToggle.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark-mode');
+            const isDark = htmlElement.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateThemeIcon();
+        });
+
+        function updateThemeIcon() {
+            const icon = themeToggle.querySelector('i');
+            if (htmlElement.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                themeToggle.title = 'Modo claro';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                themeToggle.title = 'Modo oscuro';
+            }
+        }
+
+        // ============================================
+        // INICIALIZAR AOS
+        // ============================================
+        // AOS deshabilitado - sin animaciones
+        // AOS.init({
+        //     duration: 600,
+        //     once: true,
+        //     offset: 100
+        // });
+
+        // ============================================
+        // INICIALIZAR SWIPER
+        // ============================================
+        const brandSwiper = new Swiper('.brands-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.brands-swiper .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.brands-button-next',
+                prevEl: '.brands-button-prev',
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                900: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 },
+            }
+        });
+
+        // ============================================
+        // HEADER SCROLL EFFECT
+        // ============================================
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ============================================
+        // MENÚ MÓVIL
+        // ============================================
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('categoryBar');
+        
+        if (mobileMenuBtn && mainNav) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i>' 
+                    : '<i class="fas fa-bars"></i>';
+            });
+
+            // Cerrar menú al hacer clic fuera
+            document.addEventListener('click', (e) => {
+                if (!mainNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                    mainNav.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        }
+
+        // ============================================
+        // SCROLL SUAVE EN ANCLAS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    if (mainNav) mainNav.classList.remove('active');
+                    if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // BÚSQUEDA
+        // ============================================
+        const searchData = [
+            { name: 'Rifle Gamo Shadow 1000', category: 'Caza', page: 'caza.html' },
+            { name: 'Mira Telescópica K25 4x32', category: 'Caza', page: 'caza.html' },
+            { name: 'Caña Shimano Stimula 8\'6"', category: 'Pesca', page: 'pesca.html' },
+            { name: 'Reel Shimano Stradic 4000 FL', category: 'Pesca', page: 'pesca.html' },
+            { name: 'Kayak DUKHA Serra 10', category: 'Kayaks', page: 'kayak.html' },
+            { name: 'Carpa The North Face 4 Personas', category: 'Camping', page: 'camping.html' },
+            { name: 'Saco de Dormir North Face -5°C', category: 'Camping', page: 'camping.html' },
+            { name: 'Caña Daiwa Aird-X 7\'0" Baitcasting', category: 'Pesca', page: 'pesca.html' },
+            { name: 'Reel Daiwa BG 5000', category: 'Pesca', page: 'pesca.html' },
+            { name: 'Pistola Umarex Beretta PX4', category: 'Caza', page: 'caza.html' },
+            { name: 'Señuelo Rapala Original Floater F11', category: 'Pesca', page: 'pesca.html' }
+        ];
+        const categoryPages = [
+            { term: 'caza', page: 'caza.html' },
+            { term: 'pesca', page: 'pesca.html' },
+            { term: 'kayak', page: 'kayak.html' },
+            { term: 'camping', page: 'camping.html' }
+        ];
+
+        const searchBtn = document.querySelector('.search-btn');
+        searchBtn.addEventListener('click', () => {
+            Swal.fire({
+                title: 'Buscar Productos',
+                input: 'text',
+                inputPlaceholder: 'Escribe lo que buscas...',
+                showCancelButton: true,
+                confirmButtonText: 'Buscar',
+                confirmButtonColor: 'var(--primary-green)',
+                cancelButtonText: 'Cancelar',
+            }).then((result) => {
+                if (result.value) {
+                    const query = result.value.trim().toLowerCase();
+                    if (!query) return;
+
+                    const matches = searchData.filter(item =>
+                        item.name.toLowerCase().includes(query) ||
+                        item.category.toLowerCase().includes(query)
+                    );
+
+                    if (matches.length === 0) {
+                        const categoryMatch = categoryPages.find(item => query.includes(item.term));
+                        if (categoryMatch) {
+                            window.location.href = categoryMatch.page;
+                            return;
+                        }
+
+                        Swal.fire({
+                            icon: 'info',
+                            title: 'No se encontraron resultados',
+                            text: 'No encontramos coincidencias exactas, pero puedes explorar nuestras categorías.',
+                            confirmButtonText: 'Ver catálogos',
+                            confirmButtonColor: 'var(--primary-green)'
+                        });
+                        return;
+                    }
+
+                    const resultsHtml = matches.slice(0, 5).map(item => `
+                        <div style="text-align:left; margin-bottom: 12px;">
+                            <strong>${item.name}</strong><br>
+                            <small>${item.category}</small>
+                        </div>
+                    `).join('');
+
+                    Swal.fire({
+                        title: 'Resultados de búsqueda',
+                        html: `${resultsHtml}<p>Haz clic en una categoría para ver más productos.</p>`,
+                        showCancelButton: true,
+                        confirmButtonText: 'Ir a catálogo',
+                        confirmButtonColor: 'var(--primary-green)',
+                        cancelButtonText: 'Cerrar',
+                        customClass: {
+                            popup: 'search-results-popup'
+                        }
+                    }).then((navResult) => {
+                        if (navResult.isConfirmed) {
+                            const firstPage = matches[0].page;
+                            window.location.href = firstPage;
+                        }
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // ANNOUNCEMENT BAR
+        // ============================================
+        // El anuncio se muestra de forma permanente y no puede cerrarse.
+        const announcementBar = document.getElementById('announcementBar');
+        if (announcementBar) {
+            announcementBar.style.display = 'flex';
+        }
+
+        // ============================================
+        // FAQ ACCORDION
+        // ============================================
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                // Toggle active class
+                faqItem.classList.toggle('active');
+                
+                // Toggle answer visibility
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // ============================================
+        // BUSCADOR SUPERIOR (barra utilitaria)
+        // ============================================
+        const utilityForm = document.getElementById('utilitySearchForm');
+        const utilityInput = document.getElementById('utilitySearchInput');
+        if (utilityForm) {
+            utilityForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const query = (utilityInput.value || '').trim().toLowerCase();
+                if (!query) return;
+                const match = categoryPages.find(item => query.includes(item.term));
+                if (match) { window.location.href = match.page; return; }
+                const prod = searchData.find(item =>
+                    item.name.toLowerCase().includes(query) ||
+                    item.category.toLowerCase().includes(query)
+                );
+                if (prod) { window.location.href = prod.page; return; }
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Sin resultados exactos',
+                    text: 'Explora nuestras categorías para encontrar lo que buscas.',
+                    confirmButtonText: 'Ver catálogos',
+                    confirmButtonColor: 'var(--primary-green)'
+                });
+            });
+        }
+
+        // ============================================
+        // TOGGLE BARRA DE CATEGORÍAS (móvil)
+        // ============================================
+        const catToggle = document.getElementById('catToggle');
+        const categoryMenu = document.getElementById('categoryMenu');
+        if (catToggle && categoryMenu) {
+            catToggle.addEventListener('click', () => {
+                categoryMenu.classList.toggle('open');
+            });
+        }
+    </script>
+</body>
+</html>

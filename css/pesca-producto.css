@@ -1,0 +1,327 @@
+/* =============================================================
+   Aconcagua Deportes — pesca-producto.css
+   Estilos del CATÁLOGO de kayaks (kayak2.html).
+   Coincide con las clases reales del HTML:
+   .page-hero, .catalog-layout, .sidebar, .filter-*, .price-*,
+   .catalog-header, .family-*, .models-grid, .model-*, etc.
+   El header, navbar y footer los aporta style.css.
+   Usa las variables de tema de style.css (incluye html.dark-mode).
+   ============================================================= */
+
+:root {
+  --cat-accent:        var(--primary-green, #2d5016);
+  --cat-accent-strong: var(--primary-green-dark, #1f3510);
+  --cat-amber:         var(--accent-gold, #d4a017);
+  --cat-red:           #c0504a;
+  --cat-radius: 14px;
+}
+
+/* =============================================================
+   PAGE HERO  (cabecera de la página, NO recorta nada)
+   ============================================================= */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary-green-dark), var(--primary-green));
+  color: #fff;
+  padding: 70px 0 56px;
+  text-align: center;
+}
+.page-hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  letter-spacing: -.01em;
+  line-height: 1.1;
+}
+.page-hero p {
+  font-family: 'Inter', sans-serif;
+  max-width: 640px;
+  margin: 14px auto 22px;
+  opacity: .92;
+  font-size: 1rem;
+}
+.page-hero .btn-primary { background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.4); }
+.page-hero .btn-primary:hover { background: rgba(255,255,255,.24); }
+
+/* =============================================================
+   LAYOUT  (sidebar + main)
+   ============================================================= */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Botón "Mostrar filtros" solo en móvil */
+.mobile-filter-toggle {
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-white);
+  color: var(--text-dark);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =============================================================
+   SIDEBAR / FILTROS
+   ============================================================= */
+.sidebar {
+  position: sticky;
+  top: 100px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--cat-radius);
+  padding: 22px 20px;
+}
+.filter-section { padding: 16px 0; border-bottom: 1px solid var(--border); }
+.filter-section:first-child { padding-top: 0; }
+.filter-section:last-child { border-bottom: 0; padding-bottom: 0; }
+.filter-section h3 {
+  display: flex; align-items: center; gap: 9px;
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
+  font-size: .95rem; color: var(--text-dark); margin-bottom: 14px;
+}
+.filter-section h3 i { color: var(--cat-accent); font-size: .9rem; }
+
+.filter-group { display: flex; flex-direction: column; gap: 10px; }
+.filter-option { display: flex; align-items: center; gap: 9px; }
+.filter-option input[type="checkbox"] {
+  width: 17px; height: 17px; accent-color: var(--cat-accent); cursor: pointer; flex: none;
+}
+.filter-option label {
+  font-family: 'Inter', sans-serif; font-size: .9rem;
+  color: var(--text-light); cursor: pointer;
+}
+.filter-option input:checked + label { color: var(--text-dark); font-weight: 600; }
+
+/* ---- Rango de precio ---- */
+.price-range { display: flex; flex-direction: column; gap: 14px; }
+.price-inputs { display: flex; gap: 10px; }
+.price-inputs input {
+  width: 100%; height: 42px; padding: 0 12px;
+  font-family: 'Inter', sans-serif; font-size: .9rem;
+  background: var(--bg-light); color: var(--text-dark);
+  border: 1px solid var(--border); border-radius: 9px;
+}
+.price-inputs input:focus { outline: none; border-color: var(--cat-accent); }
+
+.price-slider-container { position: relative; height: 34px; }
+.price-slider-track {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  left: 0; right: 0; height: 4px; border-radius: 999px; background: var(--border);
+}
+.price-slider-fill {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  height: 4px; border-radius: 999px; background: var(--cat-accent);
+}
+.price-slider {
+  -webkit-appearance: none; appearance: none;
+  position: absolute; top: 50%; transform: translateY(-50%);
+  left: 0; width: 100%; height: 4px; background: transparent;
+  pointer-events: none; margin: 0;
+}
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; pointer-events: all;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--cat-accent); border: 2px solid var(--bg-white);
+  box-shadow: 0 1px 4px rgba(0,0,0,.3); cursor: pointer;
+}
+.price-slider::-moz-range-thumb {
+  pointer-events: all; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--cat-accent); border: 2px solid var(--bg-white); cursor: pointer;
+}
+
+.price-presets { display: flex; flex-direction: column; gap: 7px; }
+.price-preset {
+  font-family: 'Inter', sans-serif; font-size: .82rem;
+  padding: 8px 12px; border-radius: 9px; cursor: pointer;
+  background: var(--bg-light); color: var(--text-light);
+  border: 1px solid var(--border); transition: all .18s ease;
+}
+.price-preset:hover { border-color: var(--cat-accent); color: var(--text-dark); }
+.price-preset.active { background: var(--cat-accent); border-color: var(--cat-accent); color: #fff; }
+
+.price-display {
+  font-family: 'Inter', sans-serif; font-size: .8rem;
+  color: var(--text-light); text-align: center;
+}
+.price-display span { color: var(--cat-accent); font-weight: 700; }
+
+.apply-filters-btn, .clear-filters-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 7px;
+  width: 100%; padding: 11px; cursor: pointer;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: .85rem;
+  border-radius: 9px; border: 1px solid var(--border);
+  transition: all .18s ease;
+}
+.apply-filters-btn { background: var(--cat-accent); color: #fff; border-color: var(--cat-accent); }
+.apply-filters-btn:hover { background: var(--cat-accent-strong); }
+.clear-filters-btn { background: transparent; color: var(--text-light); }
+.clear-filters-btn:hover { color: var(--text-dark); border-color: var(--cat-accent); }
+
+/* =============================================================
+   CABECERA DEL CATÁLOGO (resultados + orden + vista)
+   ============================================================= */
+.catalog-header {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 16px;
+  justify-content: space-between;
+  padding-bottom: 18px; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.results-info { font-family: 'Inter', sans-serif; color: var(--text-light); font-size: .92rem; }
+.results-info strong { color: var(--cat-accent); font-family: 'Montserrat', sans-serif; font-weight: 800; }
+
+.sort-options { display: flex; align-items: center; gap: 10px; }
+.sort-options label { font-family: 'Inter', sans-serif; font-size: .85rem; color: var(--text-light); }
+.sort-options select {
+  height: 42px; padding: 0 14px; cursor: pointer;
+  font-family: 'Inter', sans-serif; font-size: .88rem;
+  background: var(--bg-white); color: var(--text-dark);
+  border: 1px solid var(--border); border-radius: 9px;
+}
+.sort-options select:focus { outline: none; border-color: var(--cat-accent); }
+
+.view-toggle { display: flex; gap: 6px; }
+.view-btn {
+  width: 42px; height: 42px; cursor: pointer;
+  display: grid; place-items: center;
+  background: var(--bg-white); color: var(--text-light);
+  border: 1px solid var(--border); border-radius: 9px;
+  transition: all .18s ease;
+}
+.view-btn:hover { color: var(--text-dark); border-color: var(--cat-accent); }
+.view-btn.active { background: var(--cat-accent); border-color: var(--cat-accent); color: #fff; }
+
+/* ---- Filtros activos (chips) ---- */
+.active-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.filter-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Inter', sans-serif; font-size: .8rem; font-weight: 600;
+  background: var(--bg-light); color: var(--text-dark);
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 13px;
+}
+.filter-tag i { cursor: pointer; color: var(--text-light); font-size: .7rem; }
+.filter-tag i:hover { color: var(--cat-red); }
+
+/* ---- Estado vacío ---- */
+.empty-state { text-align: center; padding: 70px 20px; color: var(--text-light); }
+.empty-state i { font-size: 2.6rem; color: var(--border); margin-bottom: 16px; }
+.empty-state h3 { font-family: 'Montserrat', sans-serif; color: var(--text-dark); margin-bottom: 8px; }
+.empty-state p { font-family: 'Inter', sans-serif; }
+
+/* =============================================================
+   FAMILIAS DE KAYAKS  (tarjeta grande con imagen)
+   ============================================================= */
+.family-section {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--cat-radius);
+  overflow: hidden;
+  margin-bottom: 28px;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+.family-section:hover {
+  border-color: var(--cat-accent);
+  box-shadow: 0 18px 40px -24px rgba(0,0,0,.45);
+}
+
+/* ---- Imagen: SE RESPETA SU FORMATO NATURAL (sin recorte ni deformación) ---- */
+.family-header { position: relative; }
+.family-image {
+  width: 100%;
+  background: var(--bg-light);
+  line-height: 0;            /* evita huecos bajo la imagen */
+}
+.family-image img {
+  display: block;
+  width: 100%;               /* ocupa el ancho disponible... */
+  height: auto;              /* ...y mantiene su proporción original */
+  object-fit: contain;       /* nunca recorta la imagen */
+}
+
+.family-overlay {
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+}
+.family-name {
+  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-size: clamp(1.3rem, 3vw, 1.7rem); text-transform: uppercase;
+  color: var(--text-dark); line-height: 1.1;
+}
+.family-description {
+  font-family: 'Inter', sans-serif; color: var(--text-light);
+  margin-top: 8px; max-width: 760px; font-size: .95rem;
+}
+
+/* ---- Modelos dentro de la familia ---- */
+.family-models { padding: 22px 24px 26px; }
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.model-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.model-card:hover { border-color: var(--cat-accent); transform: translateY(-3px); }
+.model-name {
+  font-family: 'Montserrat', sans-serif; font-weight: 700;
+  font-size: 1.05rem; color: var(--text-dark);
+}
+.model-price {
+  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-size: 1.25rem; color: var(--cat-accent); margin: 6px 0 10px;
+}
+.model-card p { font-family: 'Inter', sans-serif; font-size: .86rem; color: var(--text-light) !important; }
+.model-specs { list-style: none; margin-top: 12px; padding: 0; }
+.model-specs li {
+  font-family: 'Inter', sans-serif; font-size: .8rem; color: var(--text-light);
+  padding: 6px 0 6px 18px; position: relative; border-top: 1px solid var(--border);
+}
+.model-specs li:first-child { border-top: 0; }
+.model-specs li::before {
+  content: ""; position: absolute; left: 0; top: 13px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--cat-accent);
+}
+
+/* ---- Acción WhatsApp de la familia ---- */
+.family-actions { margin-top: 22px; text-align: center; }
+.btn-whatsapp-large {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--cat-accent); color: #fff; text-decoration: none;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: .95rem;
+  padding: 13px 26px; border-radius: 999px;
+  transition: background .18s ease, transform .18s ease;
+}
+.btn-whatsapp-large:hover { background: var(--cat-accent-strong); transform: translateY(-2px); }
+
+/* =============================================================
+   RESPONSIVE
+   ============================================================= */
+@media (max-width: 900px) {
+  .catalog-layout { grid-template-columns: 1fr; }
+  .mobile-filter-toggle { display: flex; }
+  .sidebar {
+    position: static;
+    display: none;
+  }
+  .sidebar.active { display: block; }
+}
+
+@media (max-width: 560px) {
+  .catalog-header { flex-direction: column; align-items: stretch; }
+  .sort-options { justify-content: space-between; }
+  .models-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://instagram.fscl18-1.fna.fbcdn.net/v/t51.2885-19/242610084_1014947102637912_9199846470668825066_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fscl18-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFY7c-COdYVAvqhQ5r4z5xx8coWeuYOwMKe1p3XU6ymXyqc0V0GbxpY2qglZkVxlk0&_nc_ohc=zu2p1RVraLQQ7kNvwEWbfhS&_nc_gid=ja_4bNu_GDsppR2eym0yXw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af-ZoTLff6PxiXAlcoayzYVHZtNENzC5THSDjABYw6V5QA&oe=6A296DE5&_nc_sid=7a9f4b" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="https://instagram.fscl18-1.fna.fbcdn.net/v/t51.2885-19/242610084_1014947102637912_9199846470668825066_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fscl18-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFY7c-COdYVAvqhQ5r4z5xx8coWeuYOwMKe1p3XU6ymXyqc0V0GbxpY2qglZkVxlk0&_nc_ohc=zu2p1RVraLQQ7kNvwEWbfhS&_nc_gid=ja_4bNu_GDsppR2eym0yXw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af-ZoTLff6PxiXAlcoayzYVHZtNENzC5THSDjABYw6V5QA&oe=6A296DE5&_nc_sid=7a9f4b" />
+  <title>Pesca · Cañas — Aconcagua Deportes</title>
+  <meta name="description" content="Cañas de pesca Okuma, Rapala, Williamson, Blue Fox y 13 Fishing en San Felipe. Venta por WhatsApp — Aconcagua Deportes." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/styleprueba.css">
+  <link rel="stylesheet" href="css/stylepesca.css" />
+</head>
+<body>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20consultar%20sobre%20productos%20de%20Aconcagua%20Deportes" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Announcement Bar -->
+    <div id="announcementBar" class="announcement-bar">
+        <div class="container">
+            <span>🚚 Envíos a todo Chile — Consulta por WhatsApp</span>
+            <button id="closeAnnouncement" class="close-announcement">&times;</button>
+        </div>
+    </div>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="container utility-bar-content">
+            <ul class="utility-locations">
+                <li><a href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" target="_blank"><i class="fas fa-map-marker-alt"></i> Edificio Prat #740, local 22 · San Felipe</a></li>
+                <li><a href="tel:+56941446141"><i class="fas fa-phone"></i> +56 9 4144 6141</a></li>
+            </ul>
+            <form class="utility-search" id="utilitySearchForm" role="search">
+                <input type="text" id="utilitySearchInput" placeholder="Buscar productos: rifle, caña, kayak, carpa..." aria-label="Buscar">
+                <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container main-header-content">
+            <a href="index.html" class="logo-container">
+                <div class="logo-text">
+                    <div class="logo-main">ACONCAGUA DEPORTES</div>
+                    <div class="logo-sub">AVENTURA &amp; NATURALEZA</div>
+                </div>
+            </a>
+
+            <div class="container category-bar-content">
+                <button class="cat-toggle" id="catToggle"><i class="fas fa-bars"></i> Categorías</button>
+                <ul class="category-menu" id="categoryMenu">
+                <li class="cat-item">
+                    <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
+                    <div class="cat-dropdown">
+                        <a href="rifles.html">Rifles de aire</a>
+                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="opticas.html">Miras y ópticas</a>
+                        <a href="balines.html">Municiones / balines</a>
+                        <a href="accesorios-caza.html">Cuchillería y accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="pesca2.html"><i class="fas fa-fish"></i> Pesca</a>
+                    <div class="cat-dropdown">
+                        <a href="canas.html">Cañas</a>
+                        <a href="carretes.html">Reels / carretes</a>
+                        <a href="senuelos.html">Señuelos</a>
+                        <a href="cuerdas.html">Líneas y cuerdas</a>
+                        <a href="lentes.html">Lentes</a>
+                        <a href="herramientasycuchillos.html">Herramientas y cuchillos</a>
+                        <a href="buceo.html">Buceo</a>
+                        <a href="pequeños-accesorios.html">Pequeños accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="kayak2.html"><i class="fas fa-ship"></i> Kayaks</a>
+                    <div class="cat-dropdown">
+                        <a href="kayak2.html">Kayaks DUKHA</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="camping.html"><i class="fas fa-campground"></i> Camping</a>
+                    <div class="cat-dropdown">
+                        <a href="camping.html">Mochilas y outdoor</a>
+                    </div>
+                </li>
+                <li class="cat-item"><a href="index.html#about"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li class="cat-item"><a href="index.html#map"><i class="fas fa-map-marked-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="index.html#ofertas" class="cat-offers-link"><i class="fas fa-tag"></i> Ofertas</a>
+            </div>
+
+            <div class="header-actions">
+                <button class="search-btn" title="Buscar"></button>
+                <button class="theme-toggle" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="hero-eyebrow">Pesca deportiva</span>
+      <h1>Cañas para<br>el <em>agua brava</em></h1>
+      <p>Del río de montaña a la costa del Pacífico. Spinning, surfcasting, trolling y ultraligera de las mejores marcas, seleccionadas para las aguas chilenas.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num" id="statTotal">0</div><div class="lbl">Modelos</div></div>
+        <div class="hero-stat"><div class="num">5</div><div class="lbl">Marcas</div></div>
+        <div class="hero-stat"><div class="num">San&nbsp;Felipe</div><div class="lbl">Despacho local</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLBAR ============ -->
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="toolbar-row">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" id="search" placeholder="Buscar caña, marca o modelo…" autocomplete="off" />
+        </label>
+        <select class="sort" id="sort">
+          <option value="featured">Destacados</option>
+          <option value="az">Nombre A → Z</option>
+          <option value="za">Nombre Z → A</option>
+          <option value="brand">Por marca</option>
+        </select>
+      </div>
+
+      <div class="filter-group" id="brandFilters">
+        <span class="filter-label">Marca</span>
+      </div>
+      <div class="filter-group" id="catFilters">
+        <span class="filter-label">Tipo de pesca</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RESULTS ============ -->
+  <main class="wrap">
+    <div class="results-meta">
+      <span><b id="count">0</b> productos</span>
+      <span id="activeFilter">Todos</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="brands-line">Marcas en esta sección: <b>Okuma · Rapala · Williamson · Blue Fox · 13 Fishing</b></div>
+      <div>© <span id="year"></span> Aconcagua Deportes · San Felipe, Chile</div>
+    </div>
+  </footer>
+
+  <!-- ============ DATA + LÓGICA ============ -->
+  <script src="js/productos-pesca.js"></script>
+  <script>
+    /* --- CONFIG --- */
+    // TODO: reemplazar por el número real de WhatsApp (formato internacional sin +, ej: 56987654321)
+    const WHATSAPP = "56900000000";
+
+    const CONDITION_LABEL = { new: "Nuevo", popular: "Popular", sale: "Oferta" };
+
+    /* --- ESTADO --- */
+    let state = { brand: "Todas", category: "Todas", query: "", sort: "featured" };
+
+    /* --- UTILIDADES --- */
+    const data = (typeof fishingData !== "undefined") ? fishingData : [];
+    const uniq = (arr) => [...new Set(arr)];
+    const fmtPrice = (p) => p ? "$" + p.toLocaleString("es-CL") : null;
+    const el = (id) => document.getElementById(id);
+
+    /* --- CONSTRUIR FILTROS --- */
+    function buildPills(containerId, values, type) {
+      const c = el(containerId);
+      ["Todas", ...values].forEach((v) => {
+        const b = document.createElement("button");
+        b.className = "pill" + (type === "brand" ? " brand-pill" : "") + (v === "Todas" ? " active" : "");
+        b.textContent = v;
+        b.dataset.type = type;
+        b.dataset.value = v;
+        b.addEventListener("click", () => {
+          c.querySelectorAll(".pill").forEach((p) => p.classList.remove("active"));
+          b.classList.add("active");
+          state[type === "brand" ? "brand" : "category"] = v;
+          render();
+        });
+        c.appendChild(b);
+      });
+    }
+
+    /* --- RENDER --- */
+    function render() {
+      const grid = el("grid");
+      let items = data.slice();
+
+      if (state.brand !== "Todas") items = items.filter((p) => p.brand === state.brand);
+      if (state.category !== "Todas") items = items.filter((p) => p.category === state.category);
+      if (state.query) {
+        const q = state.query.toLowerCase();
+        items = items.filter((p) =>
+          (p.name + " " + p.brand + " " + p.category + " " + p.description).toLowerCase().includes(q)
+        );
+      }
+
+      const order = { new: 0, popular: 1, sale: 2 };
+      if (state.sort === "az") items.sort((a, b) => a.name.localeCompare(b.name));
+      else if (state.sort === "za") items.sort((a, b) => b.name.localeCompare(a.name));
+      else if (state.sort === "brand") items.sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+      else items.sort((a, b) => (order[a.condition] ?? 9) - (order[b.condition] ?? 9));
+
+      el("count").textContent = items.length;
+      el("activeFilter").textContent =
+        [state.brand !== "Todas" ? state.brand : null, state.category !== "Todas" ? state.category : null]
+          .filter(Boolean).join(" · ") || "Todos";
+
+      grid.innerHTML = "";
+      if (!items.length) {
+        grid.innerHTML = '<div class="empty"><div class="big">Sin resultados</div><p>Prueba con otra marca, tipo o término de búsqueda.</p></div>';
+        return;
+      }
+
+      items.forEach((p, i) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.style.animationDelay = (i * 0.04) + "s";
+
+        const priceTxt = fmtPrice(p.price);
+        const waMsg = encodeURIComponent("Hola Aconcagua Deportes, me interesa la caña " + p.name + " (" + p.brand + "). ¿Está disponible?");
+
+        card.innerHTML = `
+          <div class="card-media">
+            <span class="badge ${p.condition}">${CONDITION_LABEL[p.condition] || ""}</span>
+            <span class="card-brand">${p.brand}</span>
+            <img src="${p.image}" alt="${p.name}" loading="lazy"
+                 onerror="this.closest('.card-media').classList.add('placeholder'); this.outerHTML='<span class=&quot;ph&quot;><span class=&quot;ph-brand&quot;>${p.brand}</span><small>imagen pendiente</small></span>';" />
+          </div>
+          <div class="card-body">
+            <div class="card-cat">${p.category}</div>
+            <h3 class="card-title">${p.name}</h3>
+            <p class="card-desc">${p.description}</p>
+            <div class="card-foot">
+              <span class="price ${priceTxt ? "" : "consult"}">${priceTxt || "Consultar precio"}</span>
+              <a class="wa-btn" href="https://wa.me/${WHATSAPP}?text=${waMsg}" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 15l-1.3 4.7L6.8 20.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.3.1.7-.1 1.2z"/></svg>
+                Consultar
+              </a>
+            </div>
+          </div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    /* --- INIT --- */
+    document.addEventListener("DOMContentLoaded", () => {
+      el("year").textContent = new Date().getFullYear();
+      el("statTotal").textContent = data.length;
+
+      // Orden fijo de marcas para que coincida con el catálogo
+      const brandOrder = ["Okuma", "Rapala", "Williamson", "Blue Fox", "13 Fishing"];
+      const brands = brandOrder.filter((b) => data.some((p) => p.brand === b));
+      const cats = uniq(data.map((p) => p.category)).sort();
+
+      buildPills("brandFilters", brands, "brand");
+      buildPills("catFilters", cats, "category");
+
+      el("search").addEventListener("input", (e) => { state.query = e.target.value.trim(); render(); });
+      el("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+      el("menuToggle").addEventListener("click", () => el("nav").classList.toggle("open"));
+
+      render();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuchillería y Accesorios de Caza — Aconcagua Deportes</title>
+    <meta name="description" content="Cuchillos Leatherman, Schneide, linternas Led Lenser y accesorios de caza en San Felipe, Chile. Consulta por WhatsApp — Aconcagua Deportes.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="css/styleprueba.css">
+    <link rel="stylesheet" href="css/caza.css">
+</head>
+<body>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20consultar%20sobre%20productos%20de%20Aconcagua%20Deportes" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Announcement Bar -->
+    <div id="announcementBar" class="announcement-bar">
+        <div class="container">
+            <span>🚚 Envíos a todo Chile — Consulta por WhatsApp</span>
+            <button id="closeAnnouncement" class="close-announcement">&times;</button>
+        </div>
+    </div>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="container utility-bar-content">
+            <ul class="utility-locations">
+                <li><a href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" target="_blank"><i class="fas fa-map-marker-alt"></i> Edificio Prat #740, local 22 · San Felipe</a></li>
+                <li><a href="tel:+56941446141"><i class="fas fa-phone"></i> +56 9 4144 6141</a></li>
+            </ul>
+            <form class="utility-search" id="utilitySearchForm" role="search">
+                <input type="text" id="utilitySearchInput" placeholder="Buscar productos: rifle, caña, kayak, carpa..." aria-label="Buscar">
+                <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container main-header-content">
+            <a href="index.html" class="logo-container">
+                <div class="logo-text">
+                    <div class="logo-main">ACONCAGUA DEPORTES</div>
+                    <div class="logo-sub">AVENTURA &amp; NATURALEZA</div>
+                </div>
+            </a>
+        
+            <div class="container category-bar-content">
+                <button class="cat-toggle" id="catToggle"><i class="fas fa-bars"></i> Categorías</button>
+                <ul class="category-menu" id="categoryMenu">
+                <li class="cat-item">
+                    <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
+                    <div class="cat-dropdown">
+                        <a href="rifles.html">Rifles de aire</a>
+                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="opticas.html">Miras y ópticas</a>
+                        <a href="balines.html">Municiones / balines</a>
+                        <a href="accesorios-caza.html">Cuchillería y accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="pesca2.html"><i class="fas fa-fish"></i> Pesca</a>
+                    <div class="cat-dropdown">
+                        <a href="canas.html">Cañas</a>
+                        <a href="carretes.html">Reels / carretes</a>
+                        <a href="senuelos.html">Señuelos</a>
+                        <a href="cuerdas.html">Líneas y cuerdas</a>
+                        <a href="lentes.html">Lentes</a>
+                        <a href="herramientasycuchillos.html">Herramientas y cuchillos</a>
+                        <a href="buceo.html">Buceo</a>
+                        <a href="pequeños-accesorios.html">Pequeños accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="kayak2.html"><i class="fas fa-ship"></i> Kayaks</a>
+                    <div class="cat-dropdown">
+                        <a href="kayak2.html">Kayaks DUKHA</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="camping.html"><i class="fas fa-campground"></i> Camping</a>
+                    <div class="cat-dropdown">
+                        <a href="camping.html">Mochilas y outdoor</a>
+                    </div>
+                </li>
+                <li class="cat-item"><a href="index.html#about"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li class="cat-item"><a href="index.html#map"><i class="fas fa-map-marked-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="index.html#ofertas" class="cat-offers-link"><i class="fas fa-tag"></i> Ofertas</a>
+            </div>
+        
+            <div class="header-actions">
+                <button class="search-btn" title="Buscar"></button>
+                <button class="theme-toggle" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="acp-section">
+        <div class="acp-wrap">
+            <div class="acp-head">
+                <nav class="acp-crumbs"><a href="index.html">Inicio</a> / <a href="caza.html">Caza y Tiro</a> / <span>Cuchillería y Accesorios</span></nav>
+                <h1 class="acp-title">Cuchillería y <span>Accesorios</span></h1>
+                <p class="acp-sub">Multiherramientas Leatherman, cuchillos Schneide, linternas Led Lenser y accesorios de caza. Todo lo que necesitas para tu aventura en el campo.</p>
+            </div>
+
+            <div class="acp-toolbar">
+                <div class="acp-toolbar-row">
+                    <label class="acp-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="acpSearch" placeholder="Buscar cuchillo, multiherramienta, linterna…" autocomplete="off">
+                    </label>
+                    <select class="acp-sort" id="acpSort">
+                        <option value="featured">Destacados</option>
+                        <option value="az">Nombre A → Z</option>
+                        <option value="za">Nombre Z → A</option>
+                        <option value="brand">Por marca</option>
+                    </select>
+                </div>
+                <div class="acp-filter-group" id="acpBrandFilters"><span class="acp-filter-label">Marca</span></div>
+                <div class="acp-filter-group" id="acpCatFilters"><span class="acp-filter-label">Categoría</span></div>
+            </div>
+
+            <div class="acp-meta">
+                <span><b id="acpCount">0</b> productos</span>
+                <span id="acpActiveFilter">Cuchillería y Accesorios</span>
+            </div>
+
+            <div class="acp-grid" id="acpGrid"></div>
+        </div>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container section-padding">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-main">ACONCAGUA DEPORTES</div>
+                        <div class="logo-sub">AVENTURA & NATURALEZA</div>
+                    </div>
+                    <p class="footer-description">Especialistas en equipamiento premium para caza, pesca y deportes al aire libre. Comprometidos con la calidad, la experiencia y la pasión por la aventura.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">CATÁLOGOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="caza.html"><i class="fas fa-chevron-right"></i> Caza y Tiro Deportivo</a></li>
+                        <li><a href="pesca2.html"><i class="fas fa-chevron-right"></i> Pesca Deportiva</a></li>
+                        <li><a href="kayak2.html"><i class="fas fa-chevron-right"></i> Kayaks DUKHA</a></li>
+                        <li><a href="camping.html"><i class="fas fa-chevron-right"></i> Camping</a></li>
+                        <li><a href="index.html#ofertas"><i class="fas fa-chevron-right"></i> Ofertas Especiales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">ENLACES RÁPIDOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                        <li><a href="index.html#map"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de Garantía</a></li>
+                        <li><a href="index.html#faq"><i class="fas fa-chevron-right"></i> Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACTO</h3>
+                    <ul class="contact-info-footer">
+                        <li><i class="fas fa-map-marker-alt"></i><span>🏢Edificio Prat #740, local 22, San Felipe.</span></li>
+                        <li><i class="fas fa-phone"></i><span>+56 9 4144 6141</span></li>
+                        <li><i class="fas fa-envelope"></i><span>contacto@aconcaguadeportes.cl</span></li>
+                        <li><i class="fas fa-clock"></i><span>Lun-Vie: 9:00 - 19:00<br>Sáb: 10:00 - 14:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aconcagua Deportes. Todos los derechos reservados. | Desarrollado con pasión por la aventura y la naturaleza</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="js/productos-caza.js"></script>
+
+    <script>
+    (function () {
+        const t = document.getElementById('themeToggle'); const h = document.documentElement;
+        const s = localStorage.getItem('theme');
+        if (s === 'dark') h.classList.add('dark-mode');
+        else if (s === 'light') h.classList.remove('dark-mode');
+        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) h.classList.add('dark-mode');
+        function icon(){ if(!t) return; const i=t.querySelector('i'); if(h.classList.contains('dark-mode')){i.classList.replace('fa-moon','fa-sun');t.title='Modo claro';} else {i.classList.replace('fa-sun','fa-moon');t.title='Modo oscuro';} }
+        icon();
+        if (t) t.addEventListener('click', () => { h.classList.toggle('dark-mode'); localStorage.setItem('theme', h.classList.contains('dark-mode')?'dark':'light'); icon(); });
+    })();
+    (function () {
+        const bar = document.getElementById('announcementBar'); const close = document.getElementById('closeAnnouncement');
+        if (bar && localStorage.getItem('announcementClosed') === 'true') bar.style.display = 'none';
+        if (close) close.addEventListener('click', () => { bar.style.display='none'; localStorage.setItem('announcementClosed','true'); });
+    })();
+    (function () { const hd = document.getElementById('mainHeader'); if(hd) window.addEventListener('scroll', () => hd.classList.toggle('scrolled', window.scrollY>100)); })();
+    (function () {
+        const ct = document.getElementById('catToggle'); const cm = document.getElementById('categoryMenu');
+        if (ct && cm) ct.addEventListener('click', () => cm.classList.toggle('open'));
+        const mb = document.getElementById('mobileMenuBtn');
+        if (mb && cm) mb.addEventListener('click', () => { cm.classList.toggle('open'); mb.innerHTML = cm.classList.contains('open') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>'; });
+    })();
+    (function () {
+        const pages = [
+            { term:'caza', page:'caza.html' }, { term:'pesca', page:'pesca2.html' }, { term:'caña', page:'cañas/canas.html' },
+            { term:'kayak', page:'kayak2.html' }, { term:'camping', page:'camping.html' }, { term:'mochila', page:'camping.html' }, { term:'carpa', page:'camping.html' }
+        ];
+        const go = (raw) => { const q=(raw||'').trim().toLowerCase(); if(!q) return; const m=pages.find(i=>q.includes(i.term)); if(m){window.location.href=m.page;return;} if(window.Swal) Swal.fire({icon:'info',title:'Sin resultados exactos',text:'Explora nuestras categorías para encontrar lo que buscas.',confirmButtonText:'Cerrar'}); };
+        const sb = document.querySelector('.search-btn');
+        if (sb && window.Swal) sb.addEventListener('click', () => Swal.fire({title:'Buscar productos',input:'text',inputPlaceholder:'Escribe lo que buscas...',showCancelButton:true,confirmButtonText:'Buscar',cancelButtonText:'Cancelar'}).then(r=>{if(r.value) go(r.value);}));
+        const uf = document.getElementById('utilitySearchForm'); const ui = document.getElementById('utilitySearchInput');
+        if (uf) uf.addEventListener('submit', e => { e.preventDefault(); go(ui.value); });
+    })();
+
+    (function () {
+        const WHATSAPP = "56941446141";
+        const CONDITION_LABEL = { new: "Nuevo", popular: "Popular", sale: "Oferta" };
+        const allData = (typeof huntingData !== "undefined") ? huntingData : [];
+        /* Mostrar solo Cuchillería + Accesorios en esta página */
+        const SECTION_CATS = ["Cuchillería", "Accesorios"];
+        const data = allData.filter(p => SECTION_CATS.includes(p.category));
+        const state = { brand: "Todas", category: "Todas", query: "", sort: "featured" };
+        const el = (id) => document.getElementById(id);
+        const uniq = (a) => [...new Set(a)];
+        const fmtPrice = (p) => p ? "$" + p.toLocaleString("es-CL") : null;
+
+        function buildPills(containerId, values, type) {
+            const c = el(containerId);
+            ["Todas", ...values].forEach((v) => {
+                const b = document.createElement("button");
+                b.className = "acp-pill" + (v === "Todas" ? " active" : "");
+                b.textContent = v;
+                b.addEventListener("click", () => {
+                    c.querySelectorAll(".acp-pill").forEach(p => p.classList.remove("active"));
+                    b.classList.add("active");
+                    state[type === "brand" ? "brand" : "category"] = v;
+                    render();
+                });
+                c.appendChild(b);
+            });
+        }
+
+        function render() {
+            const grid = el("acpGrid");
+            let items = data.slice();
+            if (state.brand !== "Todas") items = items.filter(p => p.brand === state.brand);
+            if (state.category !== "Todas") items = items.filter(p => p.category === state.category);
+            if (state.query) { const q = state.query.toLowerCase(); items = items.filter(p => (p.name+" "+p.brand+" "+p.category+" "+p.description).toLowerCase().includes(q)); }
+            const order = { new: 0, popular: 1, sale: 2 };
+            if (state.sort === "az") items.sort((a,b) => a.name.localeCompare(b.name));
+            else if (state.sort === "za") items.sort((a,b) => b.name.localeCompare(a.name));
+            else if (state.sort === "brand") items.sort((a,b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+            else items.sort((a,b) => (order[a.condition] ?? 9) - (order[b.condition] ?? 9));
+
+            el("acpCount").textContent = items.length;
+            el("acpActiveFilter").textContent = [state.brand!=="Todas"?state.brand:null, state.category!=="Todas"?state.category:"Cuchillería y Accesorios"].filter(Boolean).join(" · ");
+
+            grid.innerHTML = "";
+            if (!items.length) { grid.innerHTML = '<div class="acp-empty"><div class="big">Sin resultados</div><p>Prueba con otra marca, categoría o término de búsqueda.</p></div>'; return; }
+            items.forEach((p, i) => {
+                const card = document.createElement("article");
+                card.className = "acp-card"; card.style.animationDelay = (i*0.04)+"s";
+                const priceTxt = fmtPrice(p.price);
+                const waMsg = encodeURIComponent("Hola Aconcagua Deportes, me interesa " + p.name + " (" + p.brand + "). ¿Está disponible?");
+                card.innerHTML = `
+                    <div class="acp-media">
+                        <span class="acp-badge ${p.condition}">${CONDITION_LABEL[p.condition] || ""}</span>
+                        <span class="acp-brand">${p.brand}</span>
+                        <img src="${p.image}" alt="${p.name}" loading="lazy"
+                             onerror="this.outerHTML='<span class=&quot;acp-ph&quot;><span class=&quot;acp-ph-brand&quot;>${p.brand}</span><small>imagen pendiente</small></span>';">
+                    </div>
+                    <div class="acp-body">
+                        <div class="acp-cat">${p.category}</div>
+                        <h3 class="acp-name">${p.name}</h3>
+                        <p class="acp-desc">${p.description}</p>
+                        <div class="acp-foot">
+                            <span class="acp-price ${priceTxt ? "" : "consult"}">${priceTxt || "Consultar precio"}</span>
+                            <a class="acp-wa" href="https://wa.me/${WHATSAPP}?text=${waMsg}" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Consultar</a>
+                        </div>
+                    </div>`;
+                grid.appendChild(card);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const brandOrder = ["Leatherman", "Schneide", "Led Lenser"];
+            const brands = brandOrder.filter(b => data.some(p => p.brand === b));
+            const cats = uniq(data.map(p => p.category)).sort();
+            buildPills("acpBrandFilters", brands, "brand");
+            buildPills("acpCatFilters", cats, "category");
+            el("acpSearch").addEventListener("input", e => { state.query = e.target.value.trim(); render(); });
+            el("acpSort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+            render();
+        });
+    })();
+    </script>
+</body>
+</html>

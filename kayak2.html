@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Kayaks DUKHA - Aconcagua Deportes</title>
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pesca-producto.css">
+
+    
+</head>
+<body>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20consultar%20sobre%20kayaks%20DUKHA" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Announcement Bar -->
+    <div id="announcementBar" class="announcement-bar">
+        <div class="container">
+            <span>🚚 Envíos a todo Chile — Consulta por WhatsApp</span>
+        </div>
+    </div>
+
+    <!-- Utility Bar (estilo Armarket) -->
+    <div class="utility-bar">
+        <div class="container utility-bar-content">
+            <ul class="utility-locations">
+                <li><a href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" target="_blank"><i class="fas fa-map-marker-alt"></i> Edificio Prat #740, local 22 · San Felipe</a></li>
+                <li><a href="tel:+56941446141"><i class="fas fa-phone"></i> +56 9 4144 6141</a></li>
+            </ul>
+            <form class="utility-search" id="utilitySearchForm" role="search">
+                <input type="text" id="utilitySearchInput" placeholder="Buscar productos: rifle, caña, kayak, carpa..." aria-label="Buscar">
+                <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container main-header-content">
+            <a href="index.html" class="logo-container">
+                <div class="logo-text">
+                    <div class="logo-main">ACONCAGUA DEPORTES</div>
+                    <div class="logo-sub">AVENTURA &amp; NATURALEZA</div>
+                </div>
+            </a>
+        
+            <div class="container category-bar-content">
+                <button class="cat-toggle" id="catToggle"><i class="fas fa-bars"></i> Categorías</button>
+                <ul class="category-menu" id="categoryMenu">
+                <li class="cat-item">
+                    <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
+                    <div class="cat-dropdown">
+                        <a href="rifles.html">Rifles de aire</a>
+                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="opticas.html">Miras y ópticas</a>
+                        <a href="balines.html">Municiones / balines</a>
+                        <a href="accesorios-caza.html">Cuchillería y accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="pesca2.html"><i class="fas fa-fish"></i> Pesca</a>
+                    <div class="cat-dropdown">
+                        <a href="canas.html">Cañas</a>
+                        <a href="carretes.html">Reels / carretes</a>
+                        <a href="senuelos.html">Señuelos</a>
+                        <a href="cuerdas.html">Líneas y cuerdas</a>
+                        <a href="lentes.html">Lentes</a>
+                        <a href="herramientasycuchillos.html">Herramientas y cuchillos</a>
+                        <a href="buceo.html">Buceo</a>
+                        <a href="pequeños-accesorios.html">Pequeños accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="kayak2.html"><i class="fas fa-ship"></i> Kayaks</a>
+                    <div class="cat-dropdown">
+                        <a href="kayak2.html">Kayaks DUKHA</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="camping.html"><i class="fas fa-campground"></i> Camping</a>
+                    <div class="cat-dropdown">
+                        <a href="camping.html">Mochilas y outdoor</a>
+                    </div>
+                </li>
+                <li class="cat-item"><a href="index.html#about"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li class="cat-item"><a href="index.html#map"><i class="fas fa-map-marked-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="index.html#ofertas" class="cat-offers-link"><i class="fas fa-tag"></i> Ofertas</a>
+            </div>
+        
+            <div class="header-actions">
+                <button class="search-btn" title="Buscar"></button>
+                <button class="theme-toggle" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Catálogo de Kayaks <span class="text-gradient">DUKHA</span></h1>
+            <p>INDESTRUCTIBLE POR NATURALEZA - Encuentra el kayak perfecto para tus aventuras acuáticas</p>
+            <a href="../index.html#categories" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Volver a Categorías</a>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container section-padding">
+        <button class="mobile-filter-toggle" onclick="toggleFilters()"><i class="fas fa-filter"></i> Mostrar Filtros</button>
+
+        <div class="catalog-layout">
+            <!-- Sidebar Filters -->
+            <aside class="sidebar" id="sidebar">
+                <div class="filter-section">
+                    <h3><i class="fas fa-list"></i> Tipo de Kayak</h3>
+                    <div class="filter-group">
+                        <div class="filter-option"><input type="checkbox" id="cat-remo" value="remo" onchange="applyFilters()"><label for="cat-remo">Kayaks a Remo</label></div>
+                        <div class="filter-option"><input type="checkbox" id="cat-pedales" value="pedales" onchange="applyFilters()"><label for="cat-pedales">Kayaks a Pedales</label></div>
+                        <div class="filter-option"><input type="checkbox" id="cat-pesca" value="pesca" onchange="applyFilters()"><label for="cat-pesca">Kayaks de Pesca</label></div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3><i class="fas fa-tag"></i> Modelos</h3>
+                    <div class="filter-group">
+                        <div class="filter-option"><input type="checkbox" id="model-serra" value="serra" onchange="applyFilters()"><label for="model-serra">Serra</label></div>
+                        <div class="filter-option"><input type="checkbox" id="model-permit" value="permit" onchange="applyFilters()"><label for="model-permit">Permit</label></div>
+                        <div class="filter-option"><input type="checkbox" id="model-pike" value="pike" onchange="applyFilters()"><label for="model-pike">Pike</label></div>
+                        <div class="filter-option"><input type="checkbox" id="model-taimen" value="taimen" onchange="applyFilters()"><label for="model-taimen">Taimen</label></div>
+                        <div class="filter-option"><input type="checkbox" id="model-mahi" value="mahi" onchange="applyFilters()"><label for="model-mahi">Mahi Mahi</label></div>
+                        <div class="filter-option"><input type="checkbox" id="model-wahoo" value="wahoo" onchange="applyFilters()"><label for="model-wahoo">Wahoo</label></div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3><i class="fas fa-ruler"></i> Tamaño (pies)</h3>
+                    <div class="filter-group">
+                        <div class="filter-option"><input type="checkbox" id="size-9" value="9" onchange="applyFilters()"><label for="size-9">9 pies</label></div>
+                        <div class="filter-option"><input type="checkbox" id="size-10" value="10" onchange="applyFilters()"><label for="size-10">10 pies</label></div>
+                        <div class="filter-option"><input type="checkbox" id="size-12" value="12" onchange="applyFilters()"><label for="size-12">12 pies</label></div>
+                        <div class="filter-option"><input type="checkbox" id="size-13" value="13" onchange="applyFilters()"><label for="size-13">13 pies</label></div>
+                        <div class="filter-option"><input type="checkbox" id="size-14" value="14" onchange="applyFilters()"><label for="size-14">14 pies</label></div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3><i class="fas fa-dollar-sign"></i> Precio</h3>
+                    <div class="price-range">
+                        <div class="price-inputs">
+                            <input type="number" id="minPrice" placeholder="Mín" min="0" max="900000" value="0">
+                            <input type="number" id="maxPrice" placeholder="Máx" min="0" max="900000" value="900000">
+                        </div>
+                        <div class="price-slider-container">
+                            <div class="price-slider-track"></div>
+                            <div class="price-slider-fill" id="priceSliderFill"></div>
+                            <input type="range" min="0" max="900000" value="0" class="price-slider" id="minSlider">
+                            <input type="range" min="0" max="900000" value="900000" class="price-slider" id="maxSlider">
+                        </div>
+                        <div class="price-presets">
+                            <div class="price-preset" data-min="0" data-max="450000">Menos de $450.000</div>
+                            <div class="price-preset" data-min="450000" data-max="600000">$450.000 - $600.000</div>
+                            <div class="price-preset" data-min="600000" data-max="750000">$600.000 - $750.000</div>
+                            <div class="price-preset" data-min="750000" data-max="900000">$750.000 - $900.000</div>
+                        </div>
+                        <div class="price-display">Rango: <span id="selectedMinPrice">0</span> - <span id="selectedMaxPrice">900.000</span> CLP</div>
+                        <button class="apply-filters-btn" onclick="applyFilters()"><i class="fas fa-check"></i> Aplicar</button>
+                        <button class="clear-filters-btn" onclick="clearFilters()"><i class="fas fa-times"></i> Limpiar</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3><i class="fas fa-star"></i> Condición</h3>
+                    <div class="filter-group">
+                        <div class="filter-option"><input type="checkbox" id="cond-new" value="new" onchange="applyFilters()"><label for="cond-new">Nuevo</label></div>
+                        <div class="filter-option"><input type="checkbox" id="cond-sale" value="sale" onchange="applyFilters()"><label for="cond-sale">En Oferta</label></div>
+                        <div class="filter-option"><input type="checkbox" id="cond-popular" value="popular" onchange="applyFilters()"><label for="cond-popular">Más Popular</label></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main>
+                <div class="catalog-header">
+                    <div class="results-info">Mostrando <strong id="resultCount">0</strong> familias de kayaks</div>
+                    <div class="sort-options">
+                        <label>Ordenar por:</label>
+                        <select id="sortSelect" onchange="sortProducts()">
+                            <option value="relevance">Relevancia</option>
+                            <option value="price-low">Precio: Menor a Mayor</option>
+                            <option value="price-high">Precio: Mayor a Menor</option>
+                            <option value="name-az">Nombre: A-Z</option>
+                            <option value="name-za">Nombre: Z-A</option>
+                        </select>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" onclick="setView('grid')"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" onclick="setView('list')"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+
+                <div class="active-filters" id="activeFilters"></div>
+                <div id="productsGrid"></div>
+
+                <div class="empty-state" id="emptyState" style="display:none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No se encontraron kayaks</h3>
+                    <p>Intenta ajustar los filtros de búsqueda</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer (igual al index) -->
+    <footer class="footer" id="contact">
+        <div class="container section-padding">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-main">ACONCAGUA DEPORTES</div>
+                        <div class="logo-sub">AVENTURA & NATURALEZA</div>
+                    </div>
+                    <p class="footer-description">Especialistas en equipamiento premium para caza, pesca y deportes al aire libre.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">CATÁLOGOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="caza.html"><i class="fas fa-chevron-right"></i> Caza y Tiro Deportivo</a></li>
+                        <li><a href="pezca.html"><i class="fas fa-chevron-right"></i> Pesca Deportiva</a></li>
+                        <li><a href="kayak.html"><i class="fas fa-chevron-right"></i> Kayaks DUKHA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">ENLACES RÁPIDOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                        <li><a href="index.html#map"><i class="fas fa-chevron-right"></i> Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">CONTACTO</h3>
+                    <ul class="contact-info-footer">
+                        <li><i class="fas fa-map-marker-alt"></i> 🏢Edificio Prat #740, local 22, San Felipe.</li>
+                        <li><i class="fas fa-phone"></i> +56 9 4144 6141</li>
+                        <li><i class="fas fa-envelope"></i> contacto@aconcaguadeportes.cl</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom"><p>&copy; 2024 Aconcagua Deportes. Todos los derechos reservados.</p></div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        // Tema oscuro / claro
+        const themeToggle = document.getElementById('themeToggle');
+        const htmlElement = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            htmlElement.classList.add('dark-mode');
+        } else if (savedTheme === 'light') {
+            htmlElement.classList.remove('dark-mode');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            htmlElement.classList.add('dark-mode');
+        }
+        function updateThemeIcon() {
+            const icon = themeToggle.querySelector('i');
+            if (htmlElement.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); themeToggle.title = 'Modo claro';
+            } else {
+                icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); themeToggle.title = 'Modo oscuro';
+            }
+        }
+        if (themeToggle) {
+            updateThemeIcon();
+            themeToggle.addEventListener('click', () => {
+                htmlElement.classList.toggle('dark-mode');
+                localStorage.setItem('theme', htmlElement.classList.contains('dark-mode') ? 'dark' : 'light');
+                updateThemeIcon();
+            });
+        }
+
+        // Header scroll
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) header.classList.add('scrolled'); else header.classList.remove('scrolled');
+        });
+
+        // Menú móvil
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mainNav.classList.toggle('active');
+                mobileMenuBtn.innerHTML = mainNav.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+        }
+        document.addEventListener('click', (e) => {
+            if (!mainNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mainNav.classList.remove('active');
+                if (mobileMenuBtn) mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        AOS.init({ offset: 100, once: true, duration: 800 });
+
+        // ===========================
+        // DATOS Y FUNCIONES CATÁLOGO
+        // ===========================
+        const kayakFamilies = [
+            {
+                id: 1,
+                name: "SERRA",
+                brand: "dukha",
+                category: "remo",
+                model: "serra",
+                description: "La mejor combinación entre velocidad y poder. Uno de los modelos más destacados de la serie Dukha.",
+                image: "img/serra.png",
+                models: [
+                    { id: 1, name: "SERRA 10", size: "10", price: 459990, condition: "popular", description: "Kayak versátil y ágil para aventuras diversas.", specs: ["Dimensiones: 2700 x 780 x 380 mm", "Peso: 22kg", "Capacidad: 150kg", "Ideal para: Pesca, excursiones, paseos"] },
+                    { id: 2, name: "SERRA 12", size: "12", price: 529990, condition: "new", description: "Equilibrio perfecto entre estabilidad y control.", specs: ["Dimensiones: 3630 x 780 x 350 mm", "Peso: 30kg", "Capacidad: 180kg", "Ideal para: Pesca, surfing, caza"] },
+                    { id: 3, name: "SERRA 14", size: "14", price: 599990, condition: "popular", description: "El más rápido para travesías largas.", specs: ["Dimensiones: 4230 x 770 x 400 mm", "Peso: 36kg", "Capacidad: 280kg", "Ideal para: Expediciones, travesías"] }
+                ]
+            },
+            {
+                id: 2,
+                name: "PERMIT",
+                brand: "dukha",
+                category: "remo",
+                model: "permit",
+                description: "Equilibrio perfecto entre comodidad, rendimiento y estabilidad para aventureros exigentes.",
+                image: "img/permit.png",
+                models: [
+                    { id: 4, name: "PERMIT 10.1", size: "10", price: 489990, condition: "new", description: "Robusto y maniobrable con gran estabilidad.", specs: ["Dimensiones: 3100 x 843 x 360 mm", "Peso: 30kg", "Capacidad: 190kg", "Ideal para: Pesca, expedición"] },
+                    { id: 5, name: "PERMIT 13", size: "13", price: 569990, condition: "popular", description: "Aventura y comodidad en equilibrio perfecto.", specs: ["Dimensiones: 3950 x 840 x 400 mm", "Peso: 36kg", "Capacidad: 200kg", "Ideal para: Pesca, surfing, caza"] }
+                ]
+            },
+            {
+                id: 3,
+                name: "TAIMEN",
+                brand: "dukha",
+                category: "pedales",
+                model: "taimen",
+                description: "Sistema de pedales para navegación manos libres ideal para pescadores profesionales.",
+                image: "img/taimen.png",
+                models: [
+                    { id: 6, name: "TAIMEN 10.4", size: "10", price: 689990, condition: "new", description: "Compacto y maniobrable con sistema de pedales avanzado.", specs: ["Dimensiones: 3150 x 850 x 380 mm", "Peso: 32kg", "Capacidad: 180kg", "Ideal para: Pesca en aguas cerradas"] },
+                    { id: 7, name: "TAIMEN 13", size: "13", price: 789990, condition: "new", description: "Máximo rendimiento con sistema de pedales profesional.", specs: ["Dimensiones: 3960 x 880 x 400 mm", "Peso: 38kg", "Capacidad: 220kg", "Ideal para: Pesca profesional"] }
+                ]
+            },
+            {
+                id: 4,
+                name: "MAHI MAHI",
+                brand: "dukha",
+                category: "pedales",
+                model: "mahi",
+                description: "Equilibrio entre velocidad y comodidad. Sistema de pedales eficiente para largas jornadas.",
+                image: "img/mahi.png",
+                models: [
+                    { id: 8, name: "MAHI MAHI 12", size: "12", price: 729990, condition: "popular", description: "Velocidad y comodidad en perfecta armonía.", specs: ["Dimensiones: 3650 x 850 x 380 mm", "Peso: 35kg", "Capacidad: 200kg", "Ideal para: Pesca, recreación"] },
+                    { id: 9, name: "MAHI MAHI 14", size: "14", price: 829990, condition: "new", description: "Mayor velocidad y capacidad de carga.", specs: ["Dimensiones: 4260 x 860 x 400 mm", "Peso: 42kg", "Capacidad: 250kg", "Ideal para: Pesca profesional"] }
+                ]
+            },
+            {
+                id: 5,
+                name: "PIKE 13",
+                brand: "dukha",
+                category: "remo",
+                model: "pike",
+                description: "Kayak perfecto para dos personas. Comparte aventuras con capacidad de carga de 300kg.",
+                image: "img/pike.png",
+                models: [
+                    { id: 10, name: "PIKE 13", size: "13", price: 649990, condition: "new", description: "Para aventuras en pareja con máxima comodidad.", specs: ["Dimensiones: 3780 x 843 x 430 mm", "Peso: 34kg", "Capacidad: 300kg", "Ideal para: Pesca en pareja, excursiones"] }
+                ]
+            },
+            {
+                id: 6,
+                name: "WAHOO 9",
+                brand: "dukha",
+                category: "pesca",
+                model: "wahoo",
+                description: "Modelo compacto y potente. Perfecto para toda la familia y fácil transporte.",
+                image: "img/wahoo.png",
+                models: [
+                    { id: 11, name: "WAHOO 9", size: "9", price: 399990, condition: "sale", description: "Compacto, ágil y extremadamente maniobrable.", specs: ["Dimensiones: 2700 x 780 x 380 mm", "Peso: 22kg", "Capacidad: 95kg", "Ideal para: Familia, pesca, aguas restringidas"] }
+                ]
+            }
+        ];
+
+        let filteredFamilies = [...kayakFamilies];
+        let currentView = 'grid';
+
+        function initCatalog() {
+            initPriceSliders();
+            renderFamilies();
+            updateResultCount();
+        }
+
+        function initPriceSliders() {
+            const minSlider = document.getElementById('minSlider');
+            const maxSlider = document.getElementById('maxSlider');
+            const minPriceInput = document.getElementById('minPrice');
+            const maxPriceInput = document.getElementById('maxPrice');
+            const priceSliderFill = document.getElementById('priceSliderFill');
+            const selectedMinPrice = document.getElementById('selectedMinPrice');
+            const selectedMaxPrice = document.getElementById('selectedMaxPrice');
+            const pricePresets = document.querySelectorAll('.price-preset');
+
+            function formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
+            function updatePriceSlider() {
+                const minValue = parseInt(minSlider.value);
+                const maxValue = parseInt(maxSlider.value);
+                
+                if (minValue > maxValue) {
+                    minSlider.value = maxValue;
+                    maxSlider.value = minValue;
+                    return updatePriceSlider();
+                }
+                
+                minPriceInput.value = minValue;
+                maxPriceInput.value = maxValue;
+                selectedMinPrice.textContent = formatNumber(minValue);
+                selectedMaxPrice.textContent = formatNumber(maxValue);
+                
+                const minPercent = (minValue / parseInt(minSlider.max)) * 100;
+                const maxPercent = (maxValue / parseInt(maxSlider.max)) * 100;
+                priceSliderFill.style.left = `${minPercent}%`;
+                priceSliderFill.style.width = `${maxPercent - minPercent}%`;
+            }
+
+            minSlider.addEventListener('input', updatePriceSlider);
+            maxSlider.addEventListener('input', updatePriceSlider);
+            
+            minPriceInput.addEventListener('input', function() {
+                minSlider.value = this.value || 0;
+                updatePriceSlider();
+            });
+            
+            maxPriceInput.addEventListener('input', function() {
+                maxSlider.value = this.value || 900000;
+                updatePriceSlider();
+            });
+
+            pricePresets.forEach(preset => {
+                preset.addEventListener('click', function() {
+                    pricePresets.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                    minSlider.value = this.dataset.min;
+                    maxSlider.value = this.dataset.max;
+                    updatePriceSlider();
+                });
+            });
+
+            updatePriceSlider();
+        }
+
+        function renderFamilies() {
+            const productsGrid = document.getElementById('productsGrid');
+            productsGrid.innerHTML = '';
+
+            if (filteredFamilies.length === 0) {
+                document.getElementById('emptyState').style.display = 'block';
+                productsGrid.style.display = 'none';
+                return;
+            }
+
+            document.getElementById('emptyState').style.display = 'none';
+            productsGrid.style.display = 'block';
+
+            filteredFamilies.forEach(family => {
+                const familyElement = document.createElement('div');
+                familyElement.className = 'family-section';
+                familyElement.setAttribute('data-category', family.category);
+                familyElement.setAttribute('data-model', family.model);
+                
+                const modelsHTML = family.models.map(model => {
+                    const specsHTML = model.specs.map(spec => `<li>${spec}</li>`).join('');
+                    return `
+                        <div class="model-card">
+                            <div class="model-name">${model.name}</div>
+                            <div class="model-price">$${model.price.toLocaleString('es-CL')}</div>
+                            <p style="font-size: 14px; color: #666; margin-bottom: 12px;">${model.description}</p>
+                            <ul class="model-specs">${specsHTML}</ul>
+                        </div>
+                    `;
+                }).join('');
+
+                familyElement.innerHTML = `
+                    <div class="family-header">
+                        <div class="family-image">
+                            <img src="${family.image}" alt="${family.name}" onerror="this.src='https://via.placeholder.com/800x400/2c3e50/ffffff?text=${family.name}'">
+                        </div>
+                        <div class="family-overlay">
+                            <h2 class="family-name">${family.name}</h2>
+                            <p class="family-description">${family.description}</p>
+                        </div>
+                    </div>
+                    <div class="family-models">
+                        <div class="models-grid">${modelsHTML}</div>
+                        <div class="family-actions">
+                            <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20la%20familia%20${encodeURIComponent(family.name)}%20de%20kayaks%20DUKHA" class="btn-whatsapp-large" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                productsGrid.appendChild(familyElement);
+            });
+        }
+
+        function applyFilters() {
+            const selectedCategories = Array.from(document.querySelectorAll('input[id^="cat-"]:checked')).map(cb => cb.value);
+            const selectedModels = Array.from(document.querySelectorAll('input[id^="model-"]:checked')).map(cb => cb.value);
+            const selectedSizes = Array.from(document.querySelectorAll('input[id^="size-"]:checked')).map(cb => cb.value);
+            const selectedConditions = Array.from(document.querySelectorAll('input[id^="cond-"]:checked')).map(cb => cb.value);
+            const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+            const maxPrice = parseInt(document.getElementById('maxPrice').value) || 900000;
+            const searchTerm = document.getElementById('headerSearch') ? document.getElementById('headerSearch').value.toLowerCase() : '';
+
+            filteredFamilies = kayakFamilies.filter(family => {
+                if (selectedCategories.length > 0 && !selectedCategories.includes(family.category)) return false;
+                if (selectedModels.length > 0 && !selectedModels.includes(family.model)) return false;
+                if (selectedSizes.length > 0) {
+                    const hasSize = family.models.some(m => selectedSizes.includes(m.size));
+                    if (!hasSize) return false;
+                }
+                if (selectedConditions.length > 0) {
+                    const hasCondition = family.models.some(m => selectedConditions.includes(m.condition));
+                    if (!hasCondition) return false;
+                }
+                const hasPrice = family.models.some(m => m.price >= minPrice && m.price <= maxPrice);
+                if (!hasPrice) return false;
+
+                if (searchTerm) {
+                    const familyMatch = family.name.toLowerCase().includes(searchTerm) || (family.description && family.description.toLowerCase().includes(searchTerm));
+                    const modelMatch = family.models.some(m => (m.name && m.name.toLowerCase().includes(searchTerm)) || (m.description && m.description.toLowerCase().includes(searchTerm)));
+                    if (!familyMatch && !modelMatch) return false;
+                }
+
+                return true;
+            });
+
+            renderFamilies();
+            updateResultCount();
+            updateActiveFilters();
+        }
+
+        function clearFilters() {
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            document.getElementById('minPrice').value = '0';
+            document.getElementById('maxPrice').value = '900000';
+            document.getElementById('minSlider').value = 0;
+            document.getElementById('maxSlider').value = 900000;
+            document.querySelectorAll('.price-preset').forEach(p => p.classList.remove('active'));
+            document.getElementById('selectedMinPrice').textContent = '0';
+            document.getElementById('selectedMaxPrice').textContent = '900.000';
+            applyFilters();
+        }
+
+        function updateResultCount() {
+            document.getElementById('resultCount').textContent = filteredFamilies.length;
+        }
+
+        function updateActiveFilters() {
+            const container = document.getElementById('activeFilters');
+            container.innerHTML = '';
+            const selected = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'));
+            selected.forEach(filter => {
+                const tag = document.createElement('div');
+                tag.className = 'filter-tag';
+                tag.innerHTML = `${filter.nextElementSibling.textContent} <i class="fas fa-times" onclick="removeFilter('${filter.id}')"></i>`;
+                container.appendChild(tag);
+            });
+        }
+
+        function removeFilter(id) {
+            document.getElementById(id).checked = false;
+            applyFilters();
+        }
+
+        function sortProducts() {
+            const sortValue = document.getElementById('sortSelect').value;
+            filteredFamilies.sort((a, b) => {
+                switch(sortValue) {
+                    case 'price-low':
+                        return Math.min(...a.models.map(m => m.price)) - Math.min(...b.models.map(m => m.price));
+                    case 'price-high':
+                        return Math.max(...b.models.map(m => m.price)) - Math.max(...a.models.map(m => m.price));
+                    case 'name-az':
+                        return a.name.localeCompare(b.name);
+                    case 'name-za':
+                        return b.name.localeCompare(a.name);
+                    default:
+                        return 0;
+                }
+            });
+            renderFamilies();
+        }
+
+        function setView(view) {
+            currentView = view;
+            const buttons = document.querySelectorAll('.view-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+
+        function toggleFilters() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initCatalog();
+
+            // Buscar al presionar Enter en el header
+            const hs = document.getElementById('headerSearch');
+            if (hs) {
+                hs.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') applyFilters();
+                });
+            }
+
+            // Botón de búsqueda en header
+            const searchBtn = document.querySelector('.search-btn');
+            if (searchBtn) {
+                searchBtn.addEventListener('click', () => {
+                    applyFilters();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

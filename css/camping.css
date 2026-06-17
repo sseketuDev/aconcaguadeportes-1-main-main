@@ -1,0 +1,151 @@
+/* =============================================================
+   Aconcagua Deportes — camping.css
+   Estilos SOLO del bloque de catálogo de Camping (filtros + grilla).
+   Header, navbar (category-bar) y footer vienen de styleprueba.css.
+   Clases con prefijo .acp- (Aconcagua Catálogo Producto) para no
+   colisionar con el resto del sitio. Se adapta a html.dark-mode.
+   ============================================================= */
+
+:root {
+  --acp-accent: var(--primary-green, #2f7d4f);
+  --acp-accent-strong: #1f6b40;
+  --acp-amber: #c8772f;
+  --acp-red: #c0504a;
+
+  --acp-bg-card: #ffffff;
+  --acp-bg-soft: #f4f6f4;
+  --acp-border: #e4e8e5;
+  --acp-text: #1b2520;
+  --acp-muted: #6b746f;
+  --acp-faint: #98a09b;
+  --acp-radius: 14px;
+}
+
+html.dark-mode {
+  --acp-bg-card: #1b2227;
+  --acp-bg-soft: #161c21;
+  --acp-border: #2c363d;
+  --acp-text: #e8ece9;
+  --acp-muted: #9aa6a3;
+  --acp-faint: #6c7672;
+}
+
+.acp-section { padding: 28px 0 70px; }
+.acp-wrap { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+/* ---- Encabezado compacto (NO es hero) ---- */
+.acp-head { padding: 22px 0 6px; }
+.acp-crumbs { font-family: 'Inter', sans-serif; font-size: .76rem; color: var(--acp-faint); margin-bottom: 8px; }
+.acp-crumbs a { color: var(--acp-muted); text-decoration: none; }
+.acp-crumbs a:hover { color: var(--acp-accent); }
+.acp-title {
+  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: -.01em;
+  color: var(--acp-text); line-height: 1.05; text-transform: uppercase;
+}
+.acp-title span { color: var(--acp-accent); }
+.acp-sub { font-family: 'Inter', sans-serif; color: var(--acp-muted); margin-top: 6px; max-width: 640px; font-size: .95rem; }
+
+/* ---- Toolbar ---- */
+.acp-toolbar {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--acp-bg-soft);
+  border: 1px solid var(--acp-border); border-radius: var(--acp-radius);
+  padding: 16px; margin-top: 18px;
+}
+.acp-toolbar-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.acp-search { position: relative; flex: 1 1 260px; min-width: 200px; }
+.acp-search input {
+  width: 100%; height: 46px; font-family: 'Inter', sans-serif; font-size: .92rem;
+  background: var(--acp-bg-card); color: var(--acp-text);
+  border: 1px solid var(--acp-border); border-radius: 10px; padding: 0 14px 0 42px;
+  transition: border-color .2s;
+}
+.acp-search input::placeholder { color: var(--acp-faint); }
+.acp-search input:focus { outline: none; border-color: var(--acp-accent); }
+.acp-search i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--acp-faint); }
+
+.acp-sort {
+  height: 46px; font-family: 'Inter', sans-serif; font-size: .88rem; cursor: pointer;
+  background: var(--acp-bg-card); color: var(--acp-text);
+  border: 1px solid var(--acp-border); border-radius: 10px; padding: 0 16px;
+}
+.acp-sort:focus { outline: none; border-color: var(--acp-accent); }
+
+.acp-filter-group { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+.acp-filter-label { width: 100%; font-family: 'Inter', sans-serif; font-size: .66rem; letter-spacing: .2em; text-transform: uppercase; color: var(--acp-faint); margin-bottom: 2px; }
+.acp-pill {
+  font-family: 'Inter', sans-serif; font-size: .82rem; font-weight: 600; cursor: pointer;
+  background: var(--acp-bg-card); color: var(--acp-muted);
+  border: 1px solid var(--acp-border); border-radius: 999px; padding: 8px 15px;
+  transition: all .18s ease;
+}
+.acp-pill:hover { color: var(--acp-text); border-color: var(--acp-accent); }
+.acp-pill.active { background: var(--acp-accent); border-color: var(--acp-accent); color: #fff; }
+
+/* ---- Meta ---- */
+.acp-meta {
+  display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px;
+  font-family: 'Inter', sans-serif; font-size: .8rem; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--acp-faint); padding: 22px 4px 16px;
+}
+.acp-meta b { color: var(--acp-accent); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; }
+
+/* ---- Grilla ---- */
+.acp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: 20px; }
+.acp-card {
+  background: var(--acp-bg-card); border: 1px solid var(--acp-border);
+  border-radius: var(--acp-radius); overflow: hidden; display: flex; flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s;
+  animation: acp-rise .45s both;
+}
+.acp-card:hover { transform: translateY(-4px); border-color: var(--acp-accent); box-shadow: 0 16px 34px -20px rgba(0,0,0,.4); }
+@keyframes acp-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+.acp-media { position: relative; aspect-ratio: 4/3; background: var(--acp-bg-soft); display: grid; place-items: center; overflow: hidden; }
+.acp-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.acp-card:hover .acp-media img { transform: scale(1.05); }
+.acp-ph { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--acp-faint); text-align: center; padding: 12px; }
+.acp-ph .acp-ph-brand { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--acp-faint); }
+.acp-ph small { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; }
+
+.acp-badge {
+  position: absolute; top: 11px; left: 11px; z-index: 2; color: #fff;
+  font-family: 'Inter', sans-serif; font-size: .6rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px;
+}
+.acp-badge.new { background: var(--acp-accent); }
+.acp-badge.popular { background: var(--acp-amber); }
+.acp-badge.sale { background: var(--acp-red); }
+
+.acp-brand {
+  position: absolute; top: 11px; right: 11px; z-index: 2;
+  font-family: 'Inter', sans-serif; font-size: .58rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--acp-muted);
+  background: var(--acp-bg-card); border: 1px solid var(--acp-border);
+  padding: 4px 9px; border-radius: 999px;
+}
+
+.acp-body { padding: 15px 16px 17px; display: flex; flex-direction: column; flex: 1; }
+.acp-cat { font-family: 'Inter', sans-serif; font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: var(--acp-accent); margin-bottom: 6px; }
+.acp-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.02rem; line-height: 1.22; color: var(--acp-text); }
+.acp-desc { font-family: 'Inter', sans-serif; font-size: .83rem; color: var(--acp-muted); margin-top: 8px; flex: 1; }
+
+.acp-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 15px; }
+.acp-price { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--acp-text); }
+.acp-price.consult { font-size: .86rem; color: var(--acp-accent); text-transform: none; }
+
+.acp-wa {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  background: var(--acp-accent); color: #fff; text-decoration: none;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: .8rem;
+  padding: 9px 14px; border-radius: 999px; border: 0; white-space: nowrap;
+  transition: background .18s, transform .18s;
+}
+.acp-wa:hover { background: var(--acp-accent-strong); transform: translateY(-1px); }
+.acp-wa i { font-size: .95rem; }
+
+.acp-empty { grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--acp-faint); font-family: 'Inter', sans-serif; }
+.acp-empty .big { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.8rem; color: var(--acp-faint); margin-bottom: 6px; }
+
+@media (max-width: 600px) { .acp-toolbar { position: static; } }

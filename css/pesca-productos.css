@@ -1,0 +1,200 @@
+/* =============================================================
+   Aconcagua Deportes — pesca-productos.css
+   Estilos SOLO del bloque de catálogo (barra de filtros + grilla).
+   El header, navbar (category-bar) y footer los aporta styleprueba.css.
+   Clases con prefijo .pp- para no colisionar con el resto del sitio.
+   Se adapta al modo claro/oscuro del sitio (html.dark-mode).
+   ============================================================= */
+
+:root {
+  --pp-accent: var(--primary-green, #1f7a4d);
+  --pp-accent-strong: #15623d;
+  --pp-amber: #c8772f;
+  --pp-red: #c0504a;
+
+  --pp-bg-card: #ffffff;
+  --pp-bg-soft: #f4f6f5;
+  --pp-border: #e4e8e6;
+  --pp-text: #1b2520;
+  --pp-muted: #6b746f;
+  --pp-faint: #98a09b;
+  --pp-radius: 14px;
+}
+
+/* ---- Modo oscuro del sitio ---- */
+html.dark-mode {
+  --pp-bg-card: #1b2227;
+  --pp-bg-soft: #161c21;
+  --pp-border: #2c363d;
+  --pp-text: #e8ece9;
+  --pp-muted: #9aa6a3;
+  --pp-faint: #6c7672;
+}
+
+.pp-section { padding: 28px 0 70px; }
+.pp-wrap { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+/* ---- Encabezado compacto (NO es hero) ---- */
+.pp-head { padding: 22px 0 6px; }
+.pp-crumbs {
+  font-family: 'Inter', sans-serif; font-size: .76rem; letter-spacing: .02em;
+  color: var(--pp-faint); margin-bottom: 8px;
+}
+.pp-crumbs a { color: var(--pp-muted); text-decoration: none; }
+.pp-crumbs a:hover { color: var(--pp-accent); }
+.pp-title {
+  font-family: 'Montserrat', sans-serif; font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: -.01em;
+  color: var(--pp-text); line-height: 1.05; text-transform: uppercase;
+}
+.pp-title span { color: var(--pp-accent); }
+.pp-sub { font-family: 'Inter', sans-serif; color: var(--pp-muted); margin-top: 6px; max-width: 620px; font-size: .95rem; }
+
+/* ---- Toolbar (búsqueda + orden + filtros) ---- */
+.pp-toolbar {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--pp-bg-soft);
+  border: 1px solid var(--pp-border); border-radius: var(--pp-radius);
+  padding: 16px; margin-top: 18px;
+}
+.pp-toolbar-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.pp-search { position: relative; flex: 1 1 260px; min-width: 200px; }
+.pp-search input {
+  width: 100%; height: 46px; font-family: 'Inter', sans-serif; font-size: .92rem;
+  background: var(--pp-bg-card); color: var(--pp-text);
+  border: 1px solid var(--pp-border); border-radius: 10px; padding: 0 14px 0 42px;
+  transition: border-color .2s;
+}
+.pp-search input::placeholder { color: var(--pp-faint); }
+.pp-search input:focus { outline: none; border-color: var(--pp-accent); }
+.pp-search i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--pp-faint); }
+
+.pp-sort {
+  height: 46px; font-family: 'Inter', sans-serif; font-size: .88rem; cursor: pointer;
+  background: var(--pp-bg-card); color: var(--pp-text);
+  border: 1px solid var(--pp-border); border-radius: 10px; padding: 0 16px;
+}
+.pp-sort:focus { outline: none; border-color: var(--pp-accent); }
+
+.pp-filter-group { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 14px; }
+.pp-filter-label {
+  width: 100%; font-family: 'Inter', sans-serif; font-size: .66rem;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--pp-faint); margin-bottom: 2px;
+}
+.pp-pill {
+  font-family: 'Inter', sans-serif; font-size: .82rem; font-weight: 600; cursor: pointer;
+  background: var(--pp-bg-card); color: var(--pp-muted);
+  border: 1px solid var(--pp-border); border-radius: 999px; padding: 8px 15px;
+  transition: all .18s ease;
+}
+.pp-pill:hover { color: var(--pp-text); border-color: var(--pp-accent); }
+.pp-pill.active { background: var(--pp-accent); border-color: var(--pp-accent); color: #fff; }
+
+/* ---- Meta de resultados ---- */
+.pp-meta {
+  display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px;
+  font-family: 'Inter', sans-serif; font-size: .8rem; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--pp-faint);
+  padding: 22px 4px 16px;
+}
+.pp-meta b { color: var(--pp-accent); font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; }
+
+/* ---- Grilla ---- */
+.pp-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: 20px;
+}
+.pp-card {
+  background: var(--pp-bg-card); border: 1px solid var(--pp-border);
+  border-radius: var(--pp-radius); overflow: hidden; display: flex; flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s;
+  animation: pp-rise .45s both;
+}
+.pp-card:hover { transform: translateY(-4px); border-color: var(--pp-accent); box-shadow: 0 16px 34px -20px rgba(0,0,0,.4); }
+@keyframes pp-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+.pp-media {
+  position: relative; aspect-ratio: 4/3; background: var(--pp-bg-soft);
+  display: grid; place-items: center; overflow: hidden;
+}
+.pp-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.pp-card:hover .pp-media img { transform: scale(1.05); }
+.pp-ph { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--pp-faint); text-align: center; padding: 12px; }
+.pp-ph .pp-ph-brand { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--pp-faint); }
+.pp-ph small { font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; }
+
+.pp-badge {
+  position: absolute; top: 11px; left: 11px; z-index: 2; color: #fff;
+  font-family: 'Inter', sans-serif; font-size: .6rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px;
+}
+.pp-badge.new { background: var(--pp-accent); }
+.pp-badge.popular { background: var(--pp-amber); }
+.pp-badge.sale { background: var(--pp-red); }
+
+.pp-brand {
+  position: absolute; top: 11px; right: 11px; z-index: 2;
+  font-family: 'Inter', sans-serif; font-size: .58rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--pp-muted);
+  background: var(--pp-bg-card); border: 1px solid var(--pp-border);
+  padding: 4px 9px; border-radius: 999px;
+}
+
+.pp-body { padding: 15px 16px 17px; display: flex; flex-direction: column; flex: 1; }
+.pp-cat { font-family: 'Inter', sans-serif; font-size: .64rem; letter-spacing: .16em; text-transform: uppercase; color: var(--pp-accent); margin-bottom: 6px; }
+.pp-name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.02rem; line-height: 1.22; color: var(--pp-text); }
+.pp-desc { font-family: 'Inter', sans-serif; font-size: .83rem; color: var(--pp-muted); margin-top: 8px; flex: 1; }
+
+.pp-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 15px; }
+.pp-price { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--pp-text); }
+.pp-price.consult { font-size: .86rem; color: var(--pp-accent); text-transform: none; }
+
+.pp-wa {
+  display: inline-flex; align-items: center; gap: 7px; cursor: pointer;
+  background: var(--pp-accent); color: #fff; text-decoration: none;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: .8rem;
+  padding: 9px 14px; border-radius: 999px; border: 0; white-space: nowrap;
+  transition: background .18s, transform .18s;
+}
+.pp-wa:hover { background: var(--pp-accent-strong); transform: translateY(-1px); }
+.pp-wa i { font-size: .95rem; }
+
+.pp-empty { grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--pp-faint); font-family: 'Inter', sans-serif; }
+.pp-empty .big { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.8rem; color: var(--pp-faint); margin-bottom: 6px; }
+
+.pp-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 0 4px;
+}
+.pp-page-btn {
+  min-width: 40px;
+  padding: 10px 13px;
+  border: 1px solid var(--pp-border);
+  border-radius: 999px;
+  background: var(--pp-bg-card);
+  color: var(--pp-text);
+  font-family: 'Inter', sans-serif;
+  font-size: .88rem;
+  cursor: pointer;
+  transition: border-color .2s, background .2s, color .2s;
+}
+.pp-page-btn:hover:not(:disabled) {
+  border-color: var(--pp-accent);
+  color: var(--pp-accent);
+}
+.pp-page-btn.active {
+  background: var(--pp-accent);
+  border-color: var(--pp-accent);
+  color: #fff;
+}
+.pp-page-btn:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .pp-toolbar { position: static; }
+}

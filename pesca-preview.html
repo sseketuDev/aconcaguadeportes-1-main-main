@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="https://instagram.fscl18-1.fna.fbcdn.net/v/t51.2885-19/242610084_1014947102637912_9199846470668825066_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fscl18-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFY7c-COdYVAvqhQ5r4z5xx8coWeuYOwMKe1p3XU6ymXyqc0V0GbxpY2qglZkVxlk0&_nc_ohc=zu2p1RVraLQQ7kNvwEWbfhS&_nc_gid=ja_4bNu_GDsppR2eym0yXw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af-ZoTLff6PxiXAlcoayzYVHZtNENzC5THSDjABYw6V5QA&oe=6A296DE5&_nc_sid=7a9f4b" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="https://instagram.fscl18-1.fna.fbcdn.net/v/t51.2885-19/242610084_1014947102637912_9199846470668825066_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fscl18-1.fna.fbcdn.net&_nc_cat=100&_nc_oc=Q6cZ2gFY7c-COdYVAvqhQ5r4z5xx8coWeuYOwMKe1p3XU6ymXyqc0V0GbxpY2qglZkVxlk0&_nc_ohc=zu2p1RVraLQQ7kNvwEWbfhS&_nc_gid=ja_4bNu_GDsppR2eym0yXw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af-ZoTLff6PxiXAlcoayzYVHZtNENzC5THSDjABYw6V5QA&oe=6A296DE5&_nc_sid=7a9f4b" />
+  <title>Pesca · Cañas — Aconcagua Deportes</title>
+  <meta name="description" content="Cañas de pesca Okuma, Rapala, Williamson, Blue Fox y 13 Fishing en San Felipe. Venta por WhatsApp — Aconcagua Deportes." />
+  <style>
+/* =============================================================
+   Aconcagua Deportes — style.css
+   Estética: outdoor-editorial. Pizarra profunda (río/roca),
+   acento cobre (truchas/atardecer) y verde-acero (agua fría).
+   Tipografía: Anton (display rústico) + Archivo (UI/cuerpo).
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+  --slate-900: #11161a;
+  --slate-850: #161c21;
+  --slate-800: #1b2227;
+  --slate-700: #232c33;
+  --slate-600: #344048;
+  --line: #2c363d;
+
+  --fog: #e8ece9;
+  --fog-dim: #9aa6a3;
+  --fog-faint: #6c7672;
+
+  --copper: #d2792f;
+  --copper-bright: #ec914a;
+  --teal: #4a9c8e;
+  --gold: #e0b15a;
+
+  --new: #4a9c8e;
+  --popular: #d2792f;
+  --sale: #c0504a;
+
+  --radius: 14px;
+  --radius-sm: 9px;
+  --maxw: 1240px;
+  --shadow: 0 18px 40px -22px rgba(0,0,0,.8);
+
+  --font-display: 'Anton', system-ui, sans-serif;
+  --font-body: 'Archivo', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--fog);
+  background-color: var(--slate-900);
+  background-image:
+    radial-gradient(1200px 600px at 78% -8%, rgba(210,121,47,.12), transparent 60%),
+    radial-gradient(900px 500px at 4% 4%, rgba(74,156,142,.10), transparent 55%);
+  background-attachment: fixed;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Textura topográfica sutil de fondo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .035;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1'%3E%3Cpath d='M0 60 Q60 30 120 60 T240 60'/%3E%3Cpath d='M0 100 Q60 70 120 100 T240 100'/%3E%3Cpath d='M0 140 Q60 110 120 140 T240 140'/%3E%3Cpath d='M0 180 Q60 150 120 180 T240 180'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------------------- HEADER ---------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(17,22,26,.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 70px;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand-mark {
+  width: 38px; height: 38px; flex: none;
+  display: grid; place-items: center;
+  border: 1.5px solid var(--copper);
+  border-radius: 9px;
+  color: var(--copper-bright);
+}
+.brand-mark svg { width: 22px; height: 22px; }
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  letter-spacing: .04em;
+  line-height: .95;
+  text-transform: uppercase;
+}
+.brand-name span { display: block; font-size: .58rem; letter-spacing: .42em; color: var(--copper-bright); }
+
+.nav { display: flex; gap: 4px; }
+.nav a {
+  font-size: .82rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 9px 15px; border-radius: 999px;
+  color: var(--fog-dim);
+  transition: color .2s, background .2s;
+}
+.nav a:hover { color: var(--fog); background: var(--slate-700); }
+.nav a.active { color: var(--slate-900); background: var(--copper); }
+
+.menu-toggle { display: none; background: none; border: 0; color: var(--fog); cursor: pointer; }
+
+/* ---------------------- HERO ---------------------- */
+.hero {
+  position: relative;
+  padding: 64px 0 30px;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-size: .72rem; font-weight: 700; letter-spacing: .26em;
+  text-transform: uppercase; color: var(--copper-bright);
+  margin-bottom: 18px;
+}
+.hero-eyebrow::before { content:""; width: 30px; height: 2px; background: var(--copper); }
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.7rem, 8vw, 5.6rem);
+  line-height: .92;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+.hero h1 em { font-style: normal; color: var(--copper-bright); -webkit-text-stroke: 1px var(--copper); }
+.hero p {
+  max-width: 560px; margin-top: 18px;
+  color: var(--fog-dim); font-size: 1.04rem;
+}
+.hero-stats { display: flex; gap: 34px; margin-top: 30px; flex-wrap: wrap; }
+.hero-stat .num { font-family: var(--font-display); font-size: 1.9rem; color: var(--fog); line-height: 1; }
+.hero-stat .lbl { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--fog-faint); margin-top: 4px; }
+
+/* ------------------- FILTER BAR ------------------- */
+.toolbar { padding: 26px 0 8px; position: sticky; top: 70px; z-index: 40;
+  background: linear-gradient(var(--slate-900) 72%, rgba(17,22,26,0)); }
+.toolbar-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.search {
+  position: relative; flex: 1 1 240px; min-width: 200px;
+}
+.search input {
+  width: 100%; height: 44px;
+  background: var(--slate-800); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0 16px 0 42px;
+  color: var(--fog); font-family: var(--font-body); font-size: .92rem;
+  transition: border-color .2s, background .2s;
+}
+.search input::placeholder { color: var(--fog-faint); }
+.search input:focus { outline: none; border-color: var(--copper); background: var(--slate-700); }
+.search svg { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 17px; height: 17px; color: var(--fog-faint); }
+
+.sort {
+  height: 44px; background: var(--slate-800); border: 1px solid var(--line);
+  border-radius: 999px; color: var(--fog); padding: 0 18px;
+  font-family: var(--font-body); font-size: .85rem; cursor: pointer;
+}
+.sort:focus { outline: none; border-color: var(--copper); }
+
+.filter-group { display: flex; flex-wrap: wrap; gap: 9px; padding: 16px 0 4px; }
+.filter-label {
+  width: 100%; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--fog-faint); margin-bottom: 2px;
+}
+.pill {
+  font-family: var(--font-body); font-size: .82rem; font-weight: 600;
+  letter-spacing: .02em;
+  background: var(--slate-800); color: var(--fog-dim);
+  border: 1px solid var(--line); border-radius: 999px;
+  padding: 8px 16px; cursor: pointer;
+  transition: all .18s ease;
+}
+.pill:hover { color: var(--fog); border-color: var(--slate-600); }
+.pill.active { background: var(--fog); color: var(--slate-900); border-color: var(--fog); }
+.pill.active.brand-pill { background: var(--copper); border-color: var(--copper); color: var(--slate-900); }
+
+/* --------------------- GRID --------------------- */
+.results-meta {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 22px 0 14px; color: var(--fog-faint);
+  font-size: .8rem; letter-spacing: .08em; text-transform: uppercase;
+  border-bottom: 1px solid var(--line); margin-bottom: 26px;
+}
+.results-meta b { color: var(--copper-bright); font-family: var(--font-display); font-size: 1rem; font-weight: 400; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
+  gap: 22px;
+  padding-bottom: 70px;
+}
+
+.card {
+  background: var(--slate-850);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  position: relative;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  animation: rise .5s both;
+}
+.card:hover { transform: translateY(-5px); border-color: var(--slate-600); box-shadow: var(--shadow); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+.card-media {
+  position: relative; aspect-ratio: 4 / 3;
+  background:
+    radial-gradient(120% 120% at 50% 0%, var(--slate-700), var(--slate-850));
+  display: grid; place-items: center; overflow: hidden;
+}
+.card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.card:hover .card-media img { transform: scale(1.05); }
+
+/* Placeholder cuando aún no hay imagen en Cloudinary */
+.card-media.placeholder { background: var(--slate-800); }
+.card-media .ph {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--fog-faint); text-align: center; padding: 14px;
+}
+.card-media .ph .ph-brand { font-family: var(--font-display); font-size: 1.3rem; color: var(--slate-600); letter-spacing: .04em; }
+.card-media .ph small { font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; }
+
+.badge {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  font-size: .62rem; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; padding: 5px 10px; border-radius: 999px;
+  color: var(--slate-900);
+}
+.badge.new { background: var(--new); }
+.badge.popular { background: var(--popular); }
+.badge.sale { background: var(--sale); color: #fff; }
+
+.card-brand {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  font-size: .6rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--fog-dim); background: rgba(17,22,26,.7);
+  border: 1px solid var(--line); padding: 4px 9px; border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+
+.card-body { padding: 16px 17px 18px; display: flex; flex-direction: column; flex: 1; }
+.card-cat { font-size: .66rem; letter-spacing: .18em; text-transform: uppercase; color: var(--teal); margin-bottom: 7px; }
+.card-title { font-size: 1.04rem; font-weight: 700; line-height: 1.22; color: var(--fog); }
+.card-desc { font-size: .84rem; color: var(--fog-dim); margin-top: 9px; flex: 1; }
+
+.card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 16px; }
+.price { font-family: var(--font-display); font-size: 1.35rem; letter-spacing: .01em; color: var(--fog); line-height: 1; }
+.price.consult { font-family: var(--font-body); font-weight: 700; font-size: .9rem; color: var(--copper-bright); letter-spacing: .02em; }
+
+.wa-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--copper); color: var(--slate-900);
+  font-weight: 700; font-size: .8rem; letter-spacing: .02em;
+  padding: 9px 14px; border-radius: 999px; border: 0; cursor: pointer;
+  transition: background .18s, transform .18s;
+  white-space: nowrap;
+}
+.wa-btn:hover { background: var(--copper-bright); transform: translateY(-1px); }
+.wa-btn svg { width: 15px; height: 15px; }
+
+/* --------------------- EMPTY --------------------- */
+.empty { grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--fog-faint); }
+.empty .big { font-family: var(--font-display); font-size: 2rem; color: var(--slate-600); }
+
+/* --------------------- FOOTER --------------------- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 40px 0;
+  color: var(--fog-faint);
+  font-size: .82rem;
+}
+.footer-inner { display: flex; flex-wrap: wrap; gap: 18px; justify-content: space-between; align-items: center; }
+.footer-inner .brands-line { color: var(--fog-dim); }
+.footer-inner .brands-line b { color: var(--fog); font-weight: 600; }
+
+/* --------------------- RESPONSIVE --------------------- */
+@media (max-width: 720px) {
+  .nav { display: none; }
+  .menu-toggle { display: inline-flex; }
+  .nav.open {
+    display: flex; flex-direction: column; position: absolute;
+    top: 70px; left: 0; right: 0; background: var(--slate-850);
+    border-bottom: 1px solid var(--line); padding: 12px 24px 18px; gap: 4px;
+  }
+  .toolbar { position: static; }
+  .hero { padding-top: 44px; }
+}
+
+</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="css/styleprueba.css">
+</head>
+<body>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56941446141?text=Hola,%20me%20interesa%20consultar%20sobre%20productos%20de%20Aconcagua%20Deportes" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Announcement Bar -->
+    <div id="announcementBar" class="announcement-bar">
+        <div class="container">
+            <span>🚚 Envíos a todo Chile — Consulta por WhatsApp</span>
+            <button id="closeAnnouncement" class="close-announcement">&times;</button>
+        </div>
+    </div>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="container utility-bar-content">
+            <ul class="utility-locations">
+                <li><a href="https://www.google.com/maps?q=Edificio+Prat+740,+San+Felipe,+Chile" target="_blank"><i class="fas fa-map-marker-alt"></i> Edificio Prat #740, local 22 · San Felipe</a></li>
+                <li><a href="tel:+56941446141"><i class="fas fa-phone"></i> +56 9 4144 6141</a></li>
+            </ul>
+            <form class="utility-search" id="utilitySearchForm" role="search">
+                <input type="text" id="utilitySearchInput" placeholder="Buscar productos: rifle, caña, kayak, carpa..." aria-label="Buscar">
+                <button type="submit" aria-label="Buscar"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container main-header-content">
+            <a href="index.html" class="logo-container">
+                <div class="logo-text">
+                    <div class="logo-main">ACONCAGUA DEPORTES</div>
+                    <div class="logo-sub">AVENTURA &amp; NATURALEZA</div>
+                </div>
+            </a>
+
+            <div class="container category-bar-content">
+                <button class="cat-toggle" id="catToggle"><i class="fas fa-bars"></i> Categorías</button>
+                <ul class="category-menu" id="categoryMenu">
+                <li class="cat-item">
+                    <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
+                    <div class="cat-dropdown">
+                        <a href="rifles.html">Rifles de aire</a>
+                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="opticas.html">Miras y ópticas</a>
+                        <a href="balines.html">Municiones / balines</a>
+                        <a href="accesorios-caza.html">Cuchillería y accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="pesca2.html"><i class="fas fa-fish"></i> Pesca</a>
+                    <div class="cat-dropdown">
+                        <a href="canas.html">Cañas</a>
+                        <a href="carretes.html">Reels / carretes</a>
+                        <a href="senuelos.html">Señuelos</a>
+                        <a href="cuerdas.html">Líneas y cuerdas</a>
+                        <a href="lentes.html">Lentes</a>
+                        <a href="herramientasycuchillos.html">Herramientas y cuchillos</a>
+                        <a href="buceo.html">Buceo</a>
+                        <a href="pequeños-accesorios.html">Pequeños accesorios</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="kayak2.html"><i class="fas fa-ship"></i> Kayaks</a>
+                    <div class="cat-dropdown">
+                        <a href="kayak2.html">Kayaks DUKHA</a>
+                    </div>
+                </li>
+                <li class="cat-item">
+                    <a href="camping.html"><i class="fas fa-campground"></i> Camping</a>
+                    <div class="cat-dropdown">
+                        <a href="camping.html">Mochilas y outdoor</a>
+                    </div>
+                </li>
+                <li class="cat-item"><a href="index.html#about"><i class="fas fa-store"></i> Nosotros</a></li>
+                <li class="cat-item"><a href="index.html#map"><i class="fas fa-map-marked-alt"></i> Ubicación</a></li>
+            </ul>
+            <a href="index.html#ofertas" class="cat-offers-link"><i class="fas fa-tag"></i> Ofertas</a>
+            </div>
+
+            <div class="header-actions">
+                <button class="search-btn" title="Buscar"></button>
+                <button class="theme-toggle" id="themeToggle" title="Modo oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="hero-eyebrow">Pesca deportiva</span>
+      <h1>Cañas para<br>el <em>agua brava</em></h1>
+      <p>Del río de montaña a la costa del Pacífico. Spinning, surfcasting, trolling y ultraligera de las mejores marcas, seleccionadas para las aguas chilenas.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num" id="statTotal">0</div><div class="lbl">Modelos</div></div>
+        <div class="hero-stat"><div class="num">5</div><div class="lbl">Marcas</div></div>
+        <div class="hero-stat"><div class="num">San&nbsp;Felipe</div><div class="lbl">Despacho local</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLBAR ============ -->
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="toolbar-row">
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" id="search" placeholder="Buscar caña, marca o modelo…" autocomplete="off" />
+        </label>
+        <select class="sort" id="sort">
+          <option value="featured">Destacados</option>
+          <option value="az">Nombre A → Z</option>
+          <option value="za">Nombre Z → A</option>
+          <option value="brand">Por marca</option>
+        </select>
+      </div>
+
+      <div class="filter-group" id="brandFilters">
+        <span class="filter-label">Marca</span>
+      </div>
+      <div class="filter-group" id="catFilters">
+        <span class="filter-label">Tipo de pesca</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RESULTS ============ -->
+  <main class="wrap">
+    <div class="results-meta">
+      <span><b id="count">0</b> productos</span>
+      <span id="activeFilter">Todos</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="brands-line">Marcas en esta sección: <b>Okuma · Rapala · Williamson · Blue Fox · 13 Fishing</b></div>
+      <div>© <span id="year"></span> Aconcagua Deportes · San Felipe, Chile</div>
+    </div>
+  </footer>
+
+  <!-- ============ DATA + LÓGICA ============ -->
+  <script>
+/* =============================================================
+   Aconcagua Deportes — Sección PESCA (Cañas)
+   -------------------------------------------------------------
+   Fuente: catálogo "CH-010 Cañas CH 2026" (Okuma, Rapala,
+   Williamson, Blue Fox, 13 Fishing).
+
+   NOTAS IMPORTANTES (leer antes de publicar):
+   1) PRECIOS: el catálogo NO trae precios, por eso van en `null`.
+      La tarjeta muestra "Consultar precio" cuando price === null.
+      Reemplaza null por el valor en pesos cuando lo tengas, ej: 75990
+   2) IMÁGENES: como aún no me pasaste la lista de archivos de la
+      carpeta Dropbox de Pesca, usé el CÓDIGO del modelo como nombre
+      de archivo .webp (ej: 11OKHSXS902M.webp). Debes:
+        - subir cada imagen a Cloudinary con ESE nombre, o
+        - pasarme la lista real de Dropbox y la actualizo.
+      Mientras no exista la imagen, la tarjeta muestra un
+      placeholder con la marca (no se rompe el layout).
+   3) condition: "new" | "popular" | "sale".
+      Dejé solo "new" (modelos 2026 / NUEVO) y "popular".
+      Usa "sale" cuando pongas un modelo en oferta.
+   ============================================================= */
+
+const fishingData = [
+  /* ---------------------- OKUMA ---------------------- */
+  {
+    id: 1,
+    name: "Okuma Helios SX 902M",
+    brand: "Okuma",
+    category: "Spinning",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKHSXS902M.webp",
+    description: "Caña spinning premium en carbono Toray 30T, 274 cm, 2 tramos, casting 15-45 g, acción rápida. Ultrasensible y liviana, ideal para detectar el ataque más sutil."
+  },
+  {
+    id: 2,
+    name: "Okuma Epixor 632UL",
+    brand: "Okuma",
+    category: "Ultraligera",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKEPXS632UL.webp",
+    description: "Ultraligera de carbono 30/36T, 190 cm, casting 1-8 g, 78 g. Mango de corcho AAA y pasahilos SeaGuide XO. Pensada para trucha con señuelos finos."
+  },
+  {
+    id: 3,
+    name: "Okuma Ceymar SW 902MH",
+    brand: "Okuma",
+    category: "Surfcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKCSW902MH.webp",
+    description: "Spinning de agua salada, 274 cm, lure 14-42 g, carbono de alto módulo y componentes Fuji. Una todo terreno para las costas de Chile."
+  },
+  {
+    id: 4,
+    name: "Okuma Cascade 70",
+    brand: "Okuma",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKCAS70.webp",
+    description: "Caña básica y versátil, 210 cm, lure 5-20 g, cuadro Fuji. Ideal para quien parte en la pesca de laguna o muelle sin gastar de más."
+  },
+  {
+    id: 5,
+    name: "Okuma Safina UL 612UL",
+    brand: "Okuma",
+    category: "Ultraligera",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKSULS612UL.webp",
+    description: "Grafito de alta resistencia, 185 cm, 80 g, rango de lanzamiento 1-7 g. La compañera ideal para iniciarse en la pesca ultraligera."
+  },
+  {
+    id: 6,
+    name: "Okuma Bullrod 270MH",
+    brand: "Okuma",
+    category: "Surfcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKBUL270MH.webp",
+    description: "Multipropósito de 270 cm, casting 20-50 g, mango de corcho. Desde pequeños esteros hasta pesca de surf en las costas de Chile."
+  },
+  {
+    id: 7,
+    name: "Okuma Kostera SP 902MH",
+    brand: "Okuma",
+    category: "Surfcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKKOS902MH.webp",
+    description: "Caña de agua salada de 274 cm, línea 15-30 lb, acción Medium Heavy, 250 g. Mango de EVA antideslizante para largas jornadas en el mar."
+  },
+  {
+    id: 8,
+    name: "Okuma Competition 702M",
+    brand: "Okuma",
+    category: "Spinning",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11OKCMS702M.webp",
+    description: "Carbono 24T, 213 cm, lure 10-30 g, acción rápida. Diseño de culata con agarre dividido, empuñaduras de EVA y guías de acero inoxidable."
+  },
+
+  /* ---------------------- RAPALA ---------------------- */
+  {
+    id: 9,
+    name: "Rapala Guanaqueros EVO 300XH",
+    brand: "Rapala",
+    category: "Surfcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RAGUEV300XH.webp",
+    description: "100% carbono, 300 cm, acción 80-150 g, componentes Fuji. Liviana y firme para corvina, lenguado y lances con plomo en la costa."
+  },
+  {
+    id: 10,
+    name: "Rapala Humboldt 300H",
+    brand: "Rapala",
+    category: "Baitcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RAHUM300H.webp",
+    description: "Caña de baitcasting diseñada para las costas chilenas, 300 cm, acción 20-80 g, grafito 30 ton y componentes Fuji. Ideal para lenguados y depredadores de costa."
+  },
+  {
+    id: 11,
+    name: "Rapala Trout 210UL",
+    brand: "Rapala",
+    category: "Ultraligera",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RATR210XUL.webp",
+    description: "Ultraligera de 210 cm, acción 1.5-5 g, 110 g. Acción parabólica que protege líneas finas. Especial para trucha con señuelos pequeños."
+  },
+  {
+    id: 12,
+    name: "Rapala Shadow 270MH",
+    brand: "Rapala",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RASH270MH.webp",
+    description: "Carbono de alto módulo, 270 cm, acción 10-35 g, 145 g, pasadores Fuji. Muy sensible para señuelos livianos en lagunas, lagos y muelles."
+  },
+  {
+    id: 13,
+    name: "Rapala Volkano 300XH",
+    brand: "Rapala",
+    category: "Surfcasting",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RAVOL300XH.webp",
+    description: "Caña de costa, 300 cm, acción 50-100 g, pasadores Fuji y mango de corcho. Excelente lance de señuelos en zonas costeras."
+  },
+  {
+    id: 14,
+    name: "Rapala Spin Xtreme SW 330XH",
+    brand: "Rapala",
+    category: "Jigging",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RASPXTSW330XH.webp",
+    description: "Spinning de agua salada de gran potencia, 330 cm, acción 40-80 g, componentes Fuji. Ideal para pesca con jig desde orilla en escenarios complejos."
+  },
+  {
+    id: 15,
+    name: "Rapala Royal King 210H",
+    brand: "Rapala",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RARK210H.webp",
+    description: "Diseñada para la pesca del Chinook, 210 cm, acción 50-150 g. Construcción en carbono, pasador cerámico y mango de corcho."
+  },
+  {
+    id: 16,
+    name: "Rapala Corux 270H",
+    brand: "Rapala",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11RACOR270H.webp",
+    description: "Carbono con pasador cerámico y mango de corcho, 270 cm, acción 20-50 g. Especialmente diseñada para señuelos Rapala y Storm."
+  },
+
+  /* -------------------- WILLIAMSON -------------------- */
+  {
+    id: 17,
+    name: "Williamson Solid Carbon SJ 63BJ",
+    brand: "Williamson",
+    category: "Jigging",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11WIWSJS63BJ2.webp",
+    description: "NUEVO 2026. Blank completamente sólido SC-carbon 2.0 con fibra IMAX-6, 191 cm, acción 20-30 lbs. Pasahilos Fuji 'O' marco K y portacarrete Fuji TDPS. Slow jigging."
+  },
+  {
+    id: 18,
+    name: "Williamson Pelamis 2030",
+    brand: "Williamson",
+    category: "Trolling",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11WIWPST2030.webp",
+    description: "Caña de trolling de 173 cm, acción 20-30 lbs, portacarrete y cardán de aluminio. Acción equilibrada y potente para terminar la pelea rápido."
+  },
+
+  /* ---------------------- BLUE FOX ---------------------- */
+  {
+    id: 19,
+    name: "Blue Fox Tolten 210",
+    brand: "Blue Fox",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11BFTOLT210.webp",
+    description: "Fibra compuesta reforzada, 210 cm, acción 20-40 g, pasadores cerámicos. Caña reforzada para pescas exigentes de trucha en lagunas y lagos."
+  },
+  {
+    id: 20,
+    name: "Blue Fox Ranco 210H",
+    brand: "Blue Fox",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11BFRAN210H.webp",
+    description: "Fibra compuesta, acción Heavy, 210 cm, 30-60 g, pasadores cerámicos. Muy sensible para señuelos de trucha en laguna, lago y muelle."
+  },
+  {
+    id: 21,
+    name: "Blue Fox Itata 210MH",
+    brand: "Blue Fox",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11BFIT210MH.webp",
+    description: "Fibra compuesta, acción Medium Heavy, 210 cm, 20-40 g, pasadores cerámicos. Sensible y versátil para señuelos de trucha."
+  },
+  {
+    id: 22,
+    name: "Blue Fox Fresh Telescópica 210",
+    brand: "Blue Fox",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11BFRESHTE210.webp",
+    description: "Telescópica de 210 cm, 5 tramos, acción 15-40 g, 150 g. Cabe en el bolso de pesca: perfecta para lugares de difícil acceso."
+  },
+
+  /* --------------------- 13 FISHING --------------------- */
+  {
+    id: 23,
+    name: "13 Fishing Fate Black 60L",
+    brand: "13 Fishing",
+    category: "Spinning",
+    price: null,
+    condition: "new",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11TFFTBS60L2.webp",
+    description: "Blank de grafito PVG30T, 183 cm, 2 tramos, 125 g, potencia Light, acción rápida (3-15 g). Portacarrete Evolve Soft Touch y guías Alconite. Sensibilidad de élite."
+  },
+  {
+    id: 24,
+    name: "13 Fishing Defy Black 90H",
+    brand: "13 Fishing",
+    category: "Spinning",
+    price: null,
+    condition: "popular",
+    image: "https://res.cloudinary.com/dbh4dfwol/image/upload/11TFDEFBS90H2.webp",
+    description: "Blank de grafito PVG24T, 274 cm, 2 tramos, 200 g, potencia Heavy, casting 20-80 g. Mango de agarre dividido EVA. Rendimiento más allá de lo esperado."
+  }
+];
+
+</script>
+  <script>
+    /* --- CONFIG --- */
+    // TODO: reemplazar por el número real de WhatsApp (formato internacional sin +, ej: 56987654321)
+    const WHATSAPP = "56900000000";
+
+    const CONDITION_LABEL = { new: "Nuevo", popular: "Popular", sale: "Oferta" };
+
+    /* --- ESTADO --- */
+    let state = { brand: "Todas", category: "Todas", query: "", sort: "featured" };
+
+    /* --- UTILIDADES --- */
+    const data = (typeof fishingData !== "undefined") ? fishingData : [];
+    const uniq = (arr) => [...new Set(arr)];
+    const fmtPrice = (p) => p ? "$" + p.toLocaleString("es-CL") : null;
+    const el = (id) => document.getElementById(id);
+
+    /* --- CONSTRUIR FILTROS --- */
+    function buildPills(containerId, values, type) {
+      const c = el(containerId);
+      ["Todas", ...values].forEach((v) => {
+        const b = document.createElement("button");
+        b.className = "pill" + (type === "brand" ? " brand-pill" : "") + (v === "Todas" ? " active" : "");
+        b.textContent = v;
+        b.dataset.type = type;
+        b.dataset.value = v;
+        b.addEventListener("click", () => {
+          c.querySelectorAll(".pill").forEach((p) => p.classList.remove("active"));
+          b.classList.add("active");
+          state[type === "brand" ? "brand" : "category"] = v;
+          render();
+        });
+        c.appendChild(b);
+      });
+    }
+
+    /* --- RENDER --- */
+    function render() {
+      const grid = el("grid");
+      let items = data.slice();
+
+      if (state.brand !== "Todas") items = items.filter((p) => p.brand === state.brand);
+      if (state.category !== "Todas") items = items.filter((p) => p.category === state.category);
+      if (state.query) {
+        const q = state.query.toLowerCase();
+        items = items.filter((p) =>
+          (p.name + " " + p.brand + " " + p.category + " " + p.description).toLowerCase().includes(q)
+        );
+      }
+
+      const order = { new: 0, popular: 1, sale: 2 };
+      if (state.sort === "az") items.sort((a, b) => a.name.localeCompare(b.name));
+      else if (state.sort === "za") items.sort((a, b) => b.name.localeCompare(a.name));
+      else if (state.sort === "brand") items.sort((a, b) => a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name));
+      else items.sort((a, b) => (order[a.condition] ?? 9) - (order[b.condition] ?? 9));
+
+      el("count").textContent = items.length;
+      el("activeFilter").textContent =
+        [state.brand !== "Todas" ? state.brand : null, state.category !== "Todas" ? state.category : null]
+          .filter(Boolean).join(" · ") || "Todos";
+
+      grid.innerHTML = "";
+      if (!items.length) {
+        grid.innerHTML = '<div class="empty"><div class="big">Sin resultados</div><p>Prueba con otra marca, tipo o término de búsqueda.</p></div>';
+        return;
+      }
+
+      items.forEach((p, i) => {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.style.animationDelay = (i * 0.04) + "s";
+
+        const priceTxt = fmtPrice(p.price);
+        const waMsg = encodeURIComponent("Hola Aconcagua Deportes, me interesa la caña " + p.name + " (" + p.brand + "). ¿Está disponible?");
+
+        card.innerHTML = `
+          <div class="card-media">
+            <span class="badge ${p.condition}">${CONDITION_LABEL[p.condition] || ""}</span>
+            <span class="card-brand">${p.brand}</span>
+            <img src="${p.image}" alt="${p.name}" loading="lazy"
+                 onerror="this.closest('.card-media').classList.add('placeholder'); this.outerHTML='<span class=&quot;ph&quot;><span class=&quot;ph-brand&quot;>${p.brand}</span><small>imagen pendiente</small></span>';" />
+          </div>
+          <div class="card-body">
+            <div class="card-cat">${p.category}</div>
+            <h3 class="card-title">${p.name}</h3>
+            <p class="card-desc">${p.description}</p>
+            <div class="card-foot">
+              <span class="price ${priceTxt ? "" : "consult"}">${priceTxt || "Consultar precio"}</span>
+              <a class="wa-btn" href="https://wa.me/${WHATSAPP}?text=${waMsg}" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 15l-1.3 4.7L6.8 20.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.3.1.7-.1 1.2z"/></svg>
+                Consultar
+              </a>
+            </div>
+          </div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    /* --- INIT --- */
+    document.addEventListener("DOMContentLoaded", () => {
+      el("year").textContent = new Date().getFullYear();
+      el("statTotal").textContent = data.length;
+
+      // Orden fijo de marcas para que coincida con el catálogo
+      const brandOrder = ["Okuma", "Rapala", "Williamson", "Blue Fox", "13 Fishing"];
+      const brands = brandOrder.filter((b) => data.some((p) => p.brand === b));
+      const cats = uniq(data.map((p) => p.category)).sort();
+
+      buildPills("brandFilters", brands, "brand");
+      buildPills("catFilters", cats, "category");
+
+      el("search").addEventListener("input", (e) => { state.query = e.target.value.trim(); render(); });
+      el("sort").addEventListener("change", (e) => { state.sort = e.target.value; render(); });
+      el("menuToggle").addEventListener("click", () => el("nav").classList.toggle("open"));
+
+      render();
+    });
+  </script>
+</body>
+</html>
