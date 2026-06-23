@@ -61,7 +61,7 @@
                     <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
                     <div class="cat-dropdown">
                         <a href="rifles.html">Rifles de aire</a>
-                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="pistolas.html">Pistolas de fuego</a>
                         <a href="opticas.html">Miras y ópticas</a>
                         <a href="balines.html">Municiones / balines</a>
                         <a href="accesorios-caza.html">Cuchillería y accesorios</a>
@@ -116,6 +116,15 @@
                 <nav class="acp-crumbs"><a href="index.html">Inicio</a> / <a href="caza.html">Caza y Tiro</a> / <span>Rifles de Aire</span></nav>
                 <h1 class="acp-title">Rifles de <span>Aire</span></h1>
                 <p class="acp-sub">Rifles de aire comprimido y CO2 Norica, Crosman, Benjamin y más. Ideales para tiro deportivo y práctica. Consulta stock y precio por WhatsApp.</p>
+            </div>
+
+            <!-- Aviso legal porte de armas -->
+            <div class="legal-notice">
+                <div class="legal-notice-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="legal-notice-body">
+                    <strong>Aviso Legal — Porte y Tenencia de Armas</strong>
+                    <p>De acuerdo a la <strong>Ley N° 17.798 sobre Control de Armas</strong> (Chile), la tenencia, porte y uso de armas de fuego requiere autorización expresa de la <strong>Dirección General de Movilización Nacional (DGMN)</strong>. Las réplicas y rifles de aire/CO2 aquí mostrados están sujetos a regulación según su potencia y tipo. El comprador es el único responsable de cumplir con la normativa legal vigente. Consulte siempre con la autoridad competente antes de adquirir, portar o usar cualquier tipo de arma.</p>
+                </div>
             </div>
 
             <div class="acp-toolbar">
@@ -187,7 +196,7 @@
                         <li><i class="fas fa-map-marker-alt"></i><span>🏢Edificio Prat #740, local 22, San Felipe.</span></li>
                         <li><i class="fas fa-phone"></i><span>+56 9 4144 6141</span></li>
                         <li><i class="fas fa-envelope"></i><span>contacto@aconcaguadeportes.cl</span></li>
-                        <li><i class="fas fa-clock"></i><span>Lun-Vie: 9:00 - 19:00<br>Sáb: 10:00 - 14:00</span></li>
+                        <li><i class="fas fa-clock"></i><span>Lun-Vie: 10:00 - 14:00 y 16:00 - 19:30</span></li>
                     </ul>
                 </div>
             </div>
@@ -206,7 +215,7 @@
         const s = localStorage.getItem('theme');
         if (s === 'dark') h.classList.add('dark-mode');
         else if (s === 'light') h.classList.remove('dark-mode');
-        else if (window.matchMedia('(prefers-color-scheme: dark)').matches) h.classList.add('dark-mode');
+        
         function icon(){ if(!t) return; const i=t.querySelector('i'); if(h.classList.contains('dark-mode')){i.classList.replace('fa-moon','fa-sun');t.title='Modo claro';} else {i.classList.replace('fa-sun','fa-moon');t.title='Modo oscuro';} }
         icon();
         if (t) t.addEventListener('click', () => { h.classList.toggle('dark-mode'); localStorage.setItem('theme', h.classList.contains('dark-mode')?'dark':'light'); icon(); });

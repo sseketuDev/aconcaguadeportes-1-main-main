@@ -65,7 +65,7 @@
                     <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
                     <div class="cat-dropdown">
                         <a href="rifles.html">Rifles de aire</a>
-                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="pistolas.html">Pistolas de fuego</a>
                         <a href="opticas.html">Miras y ópticas</a>
                         <a href="balines.html">Municiones / balines</a>
                         <a href="accesorios-caza.html">Cuchillería y accesorios</a>
@@ -292,8 +292,6 @@
             htmlElement.classList.add('dark-mode');
         } else if (savedTheme === 'light') {
             htmlElement.classList.remove('dark-mode');
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            htmlElement.classList.add('dark-mode');
         }
         function updateThemeIcon() {
             const icon = themeToggle.querySelector('i');

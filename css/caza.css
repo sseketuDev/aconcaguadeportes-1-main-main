@@ -46,6 +46,50 @@ html.dark-mode {
 .acp-title span { color: var(--acp-accent); }
 .acp-sub { font-family: 'Inter', sans-serif; color: var(--acp-muted); margin-top: 6px; max-width: 640px; font-size: .95rem; }
 
+/* ---- Aviso legal ---- */
+.legal-notice {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #fff8e6;
+  border: 1.5px solid #e6a817;
+  border-left: 5px solid #e6a817;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 18px 0 0;
+  font-family: 'Inter', sans-serif;
+}
+html.dark-mode .legal-notice {
+  background: #2a2210;
+  border-color: #b88a10;
+}
+.legal-notice-icon {
+  color: #c87d00;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.legal-notice-body strong {
+  display: block;
+  font-size: .9rem;
+  color: #7a5200;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+html.dark-mode .legal-notice-body strong {
+  color: #d4a040;
+}
+.legal-notice-body p {
+  font-size: .84rem;
+  color: #5a4010;
+  line-height: 1.6;
+  margin: 0;
+}
+html.dark-mode .legal-notice-body p {
+  color: #c0a060;
+}
+
 /* ---- Toolbar ---- */
 .acp-toolbar {
   position: sticky; top: 0; z-index: 20;

@@ -1,4 +1,4 @@
-/* =============================================================
+﻿/* =============================================================
    Aconcagua Deportes — sección CAZA Y TIRO
    -------------------------------------------------------------
    Fuente: "Catálogo Caza 2026" (TEC HARSEIM).
@@ -74,33 +74,33 @@ const huntingData = [
     description: "Carabina de resorte de iniciación, cal. 5.5 mm, 213 m/s. Fabricada en resina negra, mira delantera removible de fibra óptica y trasera ajustable."
   },
 
-  /* --------------- PISTOLAS Y REVÓLVERES (CO2) --------------- */
+  /* --------------- PISTOLAS DE FUEGO (CO2) --------------- */
   {
-    id: 10, name: "Crosman Vigilante (Revólver CO2)", brand: "Crosman", category: "Pistolas y revólveres",
+    id: 10, name: "Crosman Vigilante (Revólver CO2)", brand: "Crosman", category: "Pistolas de fuego",
     price: null, condition: "popular",
     image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVWr_JK2buniu_XfTNfR3Ku7UYKeEPfOLCmiFTLKSpUrU66-J4xTEkXYXWtH3R",
     description: "Revólver CO2 cal. 4.5 mm, acción simple y doble, hasta 142 m/s. Dispara 10 postones o 6 balines, cañón de acero, grip ergonómico y mira trasera ajustable."
   },
   {
-    id: 11, name: "Umarex Beretta M92 Full Metal", brand: "Umarex", category: "Pistolas y revólveres",
+    id: 11, name: "Umarex Beretta M92 Full Metal", brand: "Umarex", category: "Pistolas de fuego",
     price: null, condition: "popular",
     image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnfYv4XS3F3frAsO7CkwLRFEx_6kEwQsoT-PgEeEPX3nkYyI-x38NzFPpiF53f",
     description: "Réplica CO2 cal. 4.5 mm, 95 m/s, mecanismo Blowback, cuerpo full metal. Carro con retroceso, 17 balines. Una de las réplicas más populares para tiro."
   },
   {
-    id: 12, name: "Umarex Colt M1911 Balín", brand: "Umarex", category: "Pistolas y revólveres",
+    id: 12, name: "Umarex Colt M1911 Balín", brand: "Umarex", category: "Pistolas de fuego",
     price: null, condition: "popular",
     image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCoJyRNsZJ6nKCZElyz7qlOWg3PygkiHn9bepIa6IxreHSJbqA9NDNT5LcWYSz",
     description: "Réplica CO2 del clásico 1911, cal. 4.5 mm, 120 m/s, semiautomática full metal con Blowback. Capacidad 22 balines."
   },
   {
-    id: 13, name: "Umarex CZ 75", brand: "Umarex", category: "Pistolas y revólveres",
+    id: 13, name: "Umarex CZ 75", brand: "Umarex", category: "Pistolas de fuego",
     price: null, condition: "popular",
     image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTPqWDsE1N75a9yeBCF7QN4ZuE4rwXDUOzeoUstlDx9KQCsI0hDtUjvrnBLetys",
     description: "Réplica CO2 cal. 4.5 mm, 109 m/s, semiautomática completamente metálica con Blowback y carro con retroceso. 17 balines."
   },
   {
-    id: 14, name: "Crosman MK45 (CO2 BB)", brand: "Crosman", category: "Pistolas y revólveres",
+    id: 14, name: "Crosman MK45 (CO2 BB)", brand: "Crosman", category: "Pistolas de fuego",
     price: null, condition: "popular",
     image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqzxGdg-st1_CyDviBo1Ru8LnHtwOEOOmeResryPGl-BAdShZBzlHZU9Oo7dSt",
     description: "Pistola CO2 semiautomática cal. 4.5 mm, 146 m/s, 20 balines. Cañón de acero, grip deslizante para cargar el CO2 con facilidad y riel Picatinny."

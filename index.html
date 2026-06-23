@@ -35,8 +35,7 @@
         },
         "telephone": "+56941446141",
         "openingHours": [
-            "Mo-Fr 09:00-19:00",
-            "Sa 10:00-14:00"
+            "Mo-Fr 10:00-14:00,16:00-19:30"
         ],
         "category": "Sporting Goods Store"
     }
@@ -108,7 +107,7 @@
                     <a href="caza.html"><i class="fas fa-bullseye"></i> Caza y Tiro</a>
                     <div class="cat-dropdown">
                         <a href="rifles.html">Rifles de aire</a>
-                        <a href="pistolas.html">Pistolas y revólveres</a>
+                        <a href="pistolas.html">Pistolas de fuego</a>
                         <a href="opticas.html">Miras y ópticas</a>
                         <a href="balines.html">Municiones / balines</a>
                         <a href="accesorios-caza.html">Cuchillería y accesorios</a>
@@ -269,7 +268,7 @@
                 <article class="shop-card">
                     <div class="shop-card-badge popular">POPULAR</div>
                     <a href="carretes.html" class="shop-card-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvuJpTMGGOr_g1lLZ06M9G50M9YGFLS3Xs-ow&s" alt="Shimano Stradic FL 4000 FI" loading="lazy">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSj6KIqhdk3ODjCPprs8LJPXwT5oOQhIZR4KUcP5FbazqQ8B43d8NTw7A_DD58jex3ts4UW3pjNUp1Yg82TwbOpyi8wq09gZ47OYeacHm1J_hT75xHbb2fD" alt="Shimano Stradic FL 4000 FI" loading="lazy">
                     </a>
                     <div class="shop-card-body">
                         <span class="shop-card-cat">Pesca · Carretes</span>
@@ -283,7 +282,7 @@
                 <article class="shop-card">
                     <div class="shop-card-badge popular">POPULAR</div>
                     <a href="senuelos.html" class="shop-card-img">
-                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8oUoSOVAXf0yiA6Eg3c__nLq4-R4gWH5JA_yvFJFHqjN0K4R2mA9HfJXmlkQ" alt="Rapala Original Floater F11" loading="lazy">
+                        <img src="https://dojiw2m9tvv09.cloudfront.net/10742/product/022677000503-rapala-original-floater-9cm-b5484.jpg" alt="Rapala Original Floater F11" loading="lazy">
                     </a>
                     <div class="shop-card-body">
                         <span class="shop-card-cat">Pesca · Señuelos</span>
@@ -443,7 +442,7 @@
                             </li>
                             <li>
                                 <i class="fas fa-clock"></i>
-                                <span>Lun-Vie: 9:00 - 19:00 | Sáb: 10:00 - 14:00</span>
+                                <span>Lun-Vie: 10:00 - 14:00 y 16:00 - 19:30</span>
                             </li>
                         </ul>
                         <a 
@@ -558,7 +557,7 @@
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <span>Lun-Vie: 9:00 - 19:00<br>Sáb: 10:00 - 14:00</span>
+                            <span>Lun-Vie: 10:00 - 14:00 y 16:00 - 19:30</span>
                         </li>
                     </ul>
                 </div>
@@ -589,9 +588,6 @@
             updateThemeIcon();
         } else if (savedTheme === 'light') {
             htmlElement.classList.remove('dark-mode');
-            updateThemeIcon();
-        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            htmlElement.classList.add('dark-mode');
             updateThemeIcon();
         }
 
